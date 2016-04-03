@@ -1,0 +1,9 @@
+{
+  "firebase": "scouttracker",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
