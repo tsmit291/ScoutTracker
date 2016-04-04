@@ -71,5 +71,23 @@ exports.seed = function(knex, Promise) {
       step_supplies: 'Paper, crayons, markers and pencils.',
       step_weight: '2'
     }),
+    knex('steps').insert({
+      badge_id: '4',
+      step_description: 'What does it mean to be corageous? How about strong? Discuss these with your troop.',
+      step_supplies: 'none',
+      step_weight: '1'
+    }),
+    knex('steps').insert({
+      badge_id: '4',
+      step_description: 'Discuss things that make a person strong. What does it mean to be and eat healthy? Using the plate diagram coloring sheet, draw foods that you think are good to help you grow strong and healthy. Then, share your drawing with your troop.',
+      step_supplies: 'ChoosemyPlate.gov plate diagram coloring sheet, markers, crayons and colored pencils.',
+      step_weight:'2'
+    }),
+    knex('steps').insert({
+      badge_id: '4',
+      step_description: 'Exercise is an important component of being strong- AND healthy! Pair up with a partner and take turns seeing how many sit-ups can you do in a row. How many jumping jacks can you do in a row? Write down your scores and compare with other girls in your troop.',
+      step_supplies: 'Paper and pencil for sit-up and jumping jacks tallying.',
+      step_weight: '2'
+    }),
   );
 };
