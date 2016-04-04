@@ -233,6 +233,77 @@ exports.seed = function(knex, Promise) {
       step_supplies: 'paper, pencils, colored pencils, markers and crayons.',
       step_weight: '2'
     }),
-    
+    knex('steps').insert({
+      badge_id: '11',
+      step_description: 'Plan a camping adventure. Research local campsites and take a vote on the favorite amongst your troop. Come up with a list of things that need to be planned and split up into groups to plan. What things will you need for your camping adventure? How much will these things cost?',
+      step_supplies: 'paper, pencils, Adult Assistance needed.',
+      step_weight: '3'
+    }),
+    knex('steps').insert({
+      badge_id: '11',
+      step_description: 'Learn a new outdoor skill! Geocaching is your chance to be part global explorer, part detective. You will search for treasure chests called geocaches using a compass or GPS receiver that will help you find each chests secret hiding place.',
+      step_supplies: '(leader: treasure chests, and coordinates), (girls: compass and GPS receiver), Adult Assistance needed.',
+      step_weight: '3'
+    }),
+    knex('steps').insert({
+      badge_id: '11',
+      step_description: 'Cook a meal over a fire. Brainstorm meal ideas and then take a vote on the favorite amongst your troop. Come up with a list of ingredients that will be needed for your fireside meal. How much will these ingredients cost? Research different methods to starting a fire. How will you collect wood for your fire. Will you use a fire starter such as lint?',
+      step_supplies: 'firewood, matches, firestarters such as lint, ingredients for fireside meal, utensils and mess kits. Adult Assistance needed for fire.',
+      step_weight: '3'
+    }),
+    knex('steps').insert({
+      badge_id: '11',
+      step_description: 'Research stars and figure out what stars are visible near your campsite. Set a time to go outside and look at the different stars. Can you spot any recognizable stars?',
+      step_supplies: 'Internet, Computer for research.',
+      step_weight: '2'
+    }),
+    knex('steps').insert({
+      badge_id: '12',
+      step_description: 'What does it mean to be independent? What does it mean to be a leader? Brainstorm a list of badges and activities associated with each badge. Divide up into teams and select teams to lead each badge. Select two helpers to come before and stay after meetings for 15 minutes to assist with set up and clean up.',
+      step_supplies: 'none',
+      step_weight: '2'
+    }),
+    knex('steps').insert({
+      badge_id: '12',
+      step_description: 'Growing up is hard to do! Write the following age ranges on separate sheets of paper and write down skills that they had/have or might have at each age and things that they can and cannot do on their own. (Levels: baby/toddler, elementary school, junior high or middle school, high school, college, adult). Girls can express these items with words and/or pictures. Tape the sheets together to make a personal timeline and then present to your troop members. What do you think it will take to achieve these skills and what does it mean to be more responsible?',
+      step_supplies: 'paper, pencils, colored pencils, markers, tape',
+      step_weight: '2'
+    }),
+    knex('steps').insert({
+      badge_id: '12',
+      step_description: 'Plan a trip! Gather materials and supplies. This activity calls for public transit schedules and/or maps. You can go to your local public transportation center to get these. Getting around by yourself is a big part about becoming independent. What are different ways to get from place to place from the time you are a baby to when you are an adult? Who plans the trip and how do they know before they get there? Have you ever used public transportation? Work with a partner or small group to create a story about taking a trip and how you will get there. Use local maps and public transit schedules to help plan your trip.',
+      step_supplies: 'paper, pencils, colored pencils, markers, public transit schedules and/or maps.',
+      step_weight: '3'
+    }),
+    knex('steps').insert({
+      badge_id: '12',
+      step_description: 'Make a list of things that your parents or guardians do for you. Are there any things you could learn on your own to help out? Have you ever had a button fall off from your shirt or ripped a hole in your jeans? Take charge of your wardrobe by fixing fashion mishaps and creating personal styles! With scrap fabric, learn how to sew a basic patch onto an old item of clothing.',
+      step_supplies: 'fabric, old clothes, needles, threads, sewing needles. Adult Assistance is needed.',
+      step_weight: '3'
+    }),
+    knex('steps').insert({
+      badge_id: '13',
+      step_description: 'Choose a fitness video and clear an area in your troop meeting space for exercising. It is important to move at least one hour every day. Watch the video and follow the exercises. Which exercises are hard to do and which exercises in the video are easy to do? For the exercises that are hard to do, look up the muscles that you are using. What are ways you can strengthen these muscles to make the exercises easier?',
+      step_supplies: 'large meeting space, fitness video, tv with DVD player, yoga mats (optional).',
+      step_weight: '2'
+    }),
+    knex('steps').insert({
+      badge_id: '13',
+      step_description: 'What does it mean to get strong and stay strong? Can you think of five things that are part of a healthy lifestyle? Make a list of how you and your family try to stay healthy. What are ways your family could improve to be more healthy? How does your  family de-stress?',
+      step_supplies: 'paper, pencils.',
+      step_weight: '1'
+    }),
+    knex('steps').insert({
+      badge_id: '13',
+      step_description: 'Field Trip. Visit a local health food store and find 10 items that you think are very healthy. Write down their name. Go online and google information about their ingredients. What are some of the common ingredients in these items? Are these items you feel like you could eat?',
+      step_supplies: 'fieldtrip, Internet, Adult Assistance needed.',
+      step_weight: '2'
+    }),
+    knex('steps').insert({
+      badge_id: '13',
+      step_description: 'Invite a nutritionist to come and speak at your meeting. Make a list of questions prior to their visit to ask. What are ways I can become more healthy? What are items from my diet that are unhealthy? What activities should I do to get daily exercise?',
+      step_supplies: 'nutritionist, Adult Assistance needed.',
+      step_weight: '3'
+    })
   );
 };
