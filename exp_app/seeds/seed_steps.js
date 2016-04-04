@@ -44,6 +44,16 @@ exports.seed = function(knex, Promise) {
       badge_id: '2',
       step_description: 'Using construction paper, pencils and scissors, work with a partner to trace your hand (3 times on paper) with a pencil. Then cut out your paper hands and decorate. Write "A Daisy Was Here" on your hands and take them home. When you do something helpful around the house, leave a paper hand behind to let your family know you have done a helpful deed. Can you use all three paper hands?',
       step_weight: '3'
+    }),
+    knex('steps').insert({
+      badge_id: '3',
+      step_description: 'What does it mean to be considerate and caring? How are these different from being friendly and helpful? How are these similar? Discuss these with your troop.',
+      step_weight: '2'
+    }),
+    knex('steps').insert({
+      badge_id: '3',
+      step_description: 'Read about the Girl Scouts founder, Juliette Low and her love of animals. Juliette said that all Girl Scouts are friends to the animals, especially the wild ones. Help care for the animals by making bird feeders for the birds. When you are complete, hang the feeder outside in your front or backyard. Can you count the number of birds you see visiting your bird feeder?',
+      step_weight: '3'
     })
   );
 };
