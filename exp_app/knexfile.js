@@ -1,3 +1,4 @@
+var env = require('dotenv').load();
 module.exports = {
 
   development: {
