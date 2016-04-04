@@ -25,5 +25,25 @@ exports.seed = function(knex, Promise) {
       step_description: 'Take the time to complete the I Share! Daisy coloring page. Can you describe what you see in the picture?',
       step_weight: '1'
     }),
+    knex('steps').insert({
+      badge_id: '2',
+      step_description: 'What does it mean to be friendly? Describe your friends and what you look for in a friend.',
+      step_weight: '1'
+    }),
+    knex('steps').insert({
+      badge_id: '2',
+      step_description: 'Create a thank you card showing your appreciation. This can be a card to a family member, or to your troop leader.',
+      step_weight: '2'
+    }),
+    knex('steps').insert({
+      badge_id: '2',
+      step_description: 'Pick a story about being friendly and working together. Read the story with an adult or your troop and discuss. What are examples from the story about being friendly? What are examples from the story about working together?',
+      step_weight: '3'
+    }),
+    knex('steps').insert({
+      badge_id: '2',
+      step_description: 'Using construction paper, pencils and scissors, work with a partner to trace your hand (3 times on paper) with a pencil. Then cut out your paper hands and decorate. Write "A Daisy Was Here" on your hands and take them home. When you do something helpful around the house, leave a paper hand behind to let your family know you have done a helpful deed. Can you use all three paper hands?',
+      step_weight: '3'
+    })
   );
 };
