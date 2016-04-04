@@ -3,7 +3,6 @@ exports.up = function(knex, Promise) {
     table.increments();
     table.string('badge_name');
     table.string('scout_level');
-    table.integer('steps_id');
   })
 };
 
