@@ -647,5 +647,5 @@ exports.seed = function(knex, Promise) {
       step_supplies: 'paper, pencil for brainstorming purposes, Internet and Computer for research purposes.',
       step_weight: '2'
     })
-  );
+  )
 };
