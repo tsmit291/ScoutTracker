@@ -473,6 +473,179 @@ exports.seed = function(knex, Promise) {
       step_supplies: 'log book(journal or stapled paper), pencils.',
       step_weight: '3'
     }),
-    
+    knex('steps').insert({
+      badge_id: '21',
+      step_description: 'Find a worthwhile subject for your website or blog. The adventures of you and your friends on a Girl Scout Leadership Journey, or your progress on a Girl Scout Gold Award. Research different free services online and review the pros and cons. Doing a little homework before deciding on a free hosting site will help you choose one that fits your needs. Visiting sites and finding out about things like bandwidth and storage space can help you make the right choice. Talking to friends about their experiences is also a great research strategy.',
+      step_supplies: 'Computer, Internet for research.',
+      step_weight: '2'
+    }),
+    knex('steps').insert({
+      badge_id: '21',
+      step_description: 'Built a blueprint. Meet up with your troop and discuss the needs and requirements for your site. These decisions will be important in hashing out the wireframe or skeleton for your site and making sure the basic parts are thought out and accounted for so you can start building.',
+      step_supplies: 'none',
+      step_weight: '2'
+    }),
+    knex('steps').insert({
+      badge_id: '21',
+      step_description: 'Blog posts. If your site will mainly serve as a blog, write a few posts before going live. A blog with five or so thought-provoking pieces is more engaging than a blog with one lonely post. With several topics to browse, readers are more likely to share your blog with others and be eager to come back for more.',
+      step_supplies: 'none',
+      step_weight: '2'
+    }),
+    knex('steps').insert({
+      badge_id: '21',
+      step_description: 'Link up and build a network. Start by adding links to sites that are similar to yours and then contact those sites and request a link to your site in return. Please abide by the safety guidelines in your book. Linking to other sites is key for showing up in Internet searches. Adding hyperlinks within your stories also attracts readers.',
+      step_supplies: 'none',
+      step_weight: '2'
+    }),
+    knex('steps').insert({
+      badge_id: '22',
+      step_description: 'Where would I go? Write down a place you would like to travel to. When complete, turn your ideas in to your troop leader and discuss the results. Group similar ideas together and then discuss fun and interesting things to do at this location.',
+      step_supplies: 'paper, pencils.',
+      step_weight: '1'
+    }),
+    knex('steps').insert({
+      badge_id: '22',
+      step_description: 'Gather travel magazines and travel brochures. Or, using a laptop, research where to go on a trip. Create a travel board of places you would like to go and list things you would like to do if you travel to a specific place. When you are finished with your travel board, present it to your troop.',
+      step_supplies: 'travel magazines, brochures, computer, Internet access, information about Girl Scout destinations and Getaways, cardstock or posterboard, writing utensils, coloring utensils, tape, scissors, glue.',
+      step_weight: '3'
+    }),
+    knex('steps').insert({
+      badge_id: '22',
+      step_description: 'Itineraries are plans for what you are going to do. When you travel, it is a good idea to create an itinerary so you can be prepared each day with what you need. Itineraries can be somewhat open-ended. For this step, look over some itineraries and create your own for the trips you selected as a troop. What do you like about the itineraries? Some might be the amount of detail attached to each event, times listed, detail of places attending, suggested clothing/footwear listed or fitness level to participate. Do you think there is enough or too much detail for what will happen each day? What about costs per day?',
+      step_supplies: 'itinerary examples, computer, Internet access.',
+      step_weight: '3'
+    }),
+    knex('steps').insert({
+      badge_id: '22',
+      step_description: 'Visit a travel agent office and ask them questions about your trip idea. What are additional travel options for this trip? Have you received any customer feedback in regards to this trip?',
+      step_supplies: 'travel agency, pencil, paper.',
+      step_weight: '3'
+    }),
+    knex('steps').insert({
+      badge_id: '23',
+      step_description: 'What is the definition of cardiovascular disease? Did you know that this is the number one cause of death for women? Discuss with your troop why you think women are more susceptible to this disease and then look up symptoms associated with heart attacks. Brainstorm ways you think that you can reduce risk for a heart attack and share.',
+      step_supplies: 'none',
+      step_weight: '2'
+    }),
+    knex('steps').insert({
+      badge_id: '23',
+      step_description: 'Share what you have learned about heart disease and make an informative electronic brochure. List at least three facts about heart disease in women, list at least three risk factors for developing heart disease in women. List at least three warning signs of a heart attack in women as well as three steps to help lessen the risk of heart disease. Brainstorm ten benefits of regular exercise and create a healthy meal plan for one day. Other components can include how to find your pulse and heart rate, compare calories and total fat in three similar fast food restaurant items, you can even share tips on how to make healthy choices when eating out at restaurants.',
+      step_supplies: 'computer, Internet access',
+      step_weight: '3'
+    }),
+    knex('steps').insert({
+      badge_id: '23',
+      step_description: 'Discuss ideas for healthy snacks. Then, plan a heart healthy snack. Fun ideas include cutting up dried fruit and using fat free yogurt as a dip. Or, melt some dark chocolate for a fondue. While enjoying a healthy snack, bring up some common ingredients that should be looked at on food labels. How do you decipher these to be healthy versus unhealthy?',
+      step_supplies: 'healthy snacks, food labels.',
+      step_weight: '2'
+    }),
+    knex('steps').insert({
+      badge_id: '23',
+      step_description: 'Food Portioning: Research the different food groups and look up proper food portioning for these different groups. Estimate a portion of one of the food items you researched. Then compare its portion to the actual recommended portion. How are they similar or different? Why is food portioning important?',
+      step_supplies: 'food scale, snacks (for measuring purposes), computer, Internet access for research.',
+      step_weight: '3'
+    }),
+    knex('steps').insert({
+      badge_id: '24',
+      step_description: 'What kind of adventure speaks to you? In this badge, you will go on a multi day high adventure challenge. You could go rock climbing, ice caving, skiing, canoeing, kayaking, biking or even rafting. Put your outdoor skills to the test and gain some new ones! Make a list of activities that you would be interested in doing. When you are complete, collect the lists and present each list to your troop. What ideas were popular in your troop? Once you read through all ideas, come up with your 3 favorites and begin planning them out.',
+      step_supplies: 'paper, pencils, computer and Internet access (research purposes)',
+      step_weight: '2'
+    }),
+    knex('steps').insert({
+      badge_id: '24',
+      step_description: 'Present your 3 favorite ideas from step one to the troop. Vote on your favorite idea and then break up into teams to plan the multi-day high adventure challenge. What different teams will be needed to plan this trip? How much will it cost to attend? What supplies, food and tools will be needed?',
+      step_supplies: 'paper, pencils, computer and internet access (research purposes).',
+      step_weight: '3'
+    }),
+    knex('steps').insert({
+      badge_id: '24',
+      step_description: 'Set a date for your high adventure challenge to begin and divide up the supply list amongst the scouts in your troop. Make sure a packing list is created and sent out with each member of the troop. What items might you have forgotten? Do you have a back up plan if the weather does not permit the activities chosen? How long will it take you to get to your trip destination?',
+      step_supplies: 'paper, pencils, computer and internet access (research purposes).',
+      step_weight: '3'
+    }),
+    knex('steps').insert({
+      badge_id: '25',
+      step_description: 'Lead a series of fun and inventive and challenging games and then play them with your troop! Research some famous and popular board games. What are the common factors in these games? What are some things you like about these games? What are some things you would change about these games?',
+      step_supplies: 'paper, pencils, computer and internet access (research purposes).',
+      step_weight: '2'
+    }),
+    knex('steps').insert({
+      badge_id: '25',
+      step_description: 'Gather at least eight players to compete in a sudden-death championship for rock paper scissors. Come up with a new game, with the same concept as rock paper scissors and add a special twist. Take turns and present your new twist on the game to the troop. Teaching others to play can help you become more proficient as a leader and a player.',
+      step_supplies: 'none',
+      step_weight: '1'
+    }),
+    knex('steps').insert({
+      badge_id: '25',
+      step_description: 'Combine two or more sports into one adventure race, or join an organized adventure race. If you make your own, chart out a course that requires a team of racers to work together to navigate, using only a map. The first team to follow all of the rules and complete the course wins. Racers might bike to a designated location and then hike to a specific place from where they are required to swim a certain distance to reach their destination. For more fun, try giving your race a theme that makes a fantasy world or alternate-reality world come alive. It could be a world from your favorite book, movie or game.',
+      step_supplies: 'to be determined by the scout.',
+      step_weight: '3'
+    }),
+    knex('steps').insert({
+      badge_id: '26',
+      step_description: 'You want your voice to be heard. It is so important that one of your leadership journeys is about that. If you want your voice to be heard by government, it helps to know about public policy; the laws and government actions surrounding particular issues. To influence public policy, it is important to know about how a citizen can work to affect change in her community, her country, and her world. Find out how an activist for an issue about which you care influences public policy. Have their campaigns for change been successful? What challenges did they encounter? Do they have any advice for you?',
+      step_supplies: 'pencil, paper, interviewee.',
+      step_weight: '3'
+    }),
+    knex('steps').insert({
+      badge_id: '26',
+      step_description: 'Watch a documentary or movie. Find one about an individual or group who pushed for a change in public policy, and screen it for your troop, friends and or family. Afterward, discuss which tactics were used successful in gathering support for the cause.',
+      step_supplies: 'tv, dvd player, documentary or movie.',
+      step_weight: '2'
+    }),
+    knex('steps').insert({
+      badge_id: '26',
+      step_description: 'Think about an issue facing policy-makers in America. it might be pollution, regulations, or teen texting and driving. Now, find out how the issue is regulared in three other countries. What are the biggest differences between public policy in the United States and abroad?',
+      step_supplies: 'pencil, paper, Internet access for research purposes.',
+      step_weight: '3'
+    }),
+    knex('steps').insert({
+      badge_id: '26',
+      step_description: 'Explore an international non-governmental organization. This might be CARE, Doctors Without Borders, or the World Wildlife Federation. Find out how the group tries to change policy and what challenges are involved in trying to influence one issue across national borders. Who does this NGO lobby to effect change?',
+      step_supplies: 'pencil, paper, Internet access for research purposes.',
+      step_weight: '3'
+    }),
+    knex('steps').insert({
+      badge_id: '27',
+      step_description: 'What does it take to motivate a team to accomplish their goals and dreams? The best coaches put their answers into action at every practice. In this badge, find your answers and share them! Coaching is an opportunity to share your love of a sport, demonstrate your athletic skills, and inspire and empower athletes to realize their potential. Begin by outlining your coaching strategy. Conduct a first assessment. What will you coach? Design your coaching plan and put your plan into action. Attend the big event and make a final assessment.',
+      step_supplies: 'paper, pencil',
+      step_weight: '3'
+    }),
+    knex('steps').insert({
+      badge_id: '27',
+      step_description: 'Talk to a great coach or highly experienced athlete. Ask for insight from a coach or a professional or amateur athlete. It might be someone who coaches at or plays for a school, an after-school program, or a local college or university. If possible, shadow them during a practice or a game. You might ask to see a playbook. Take notes and see what components you can bring over to your coaching.',
+      step_supplies: 'paper, pencil, coach or professional or amateur athlete to interview.',
+      step_weight: '2'
+    }),
+    knex('steps').insert({
+      badge_id: '27',
+      step_description: 'Watch three sports documentaries. The sport can be one you are planning to coach or a different one. This is mostly about the nitty-gritty of strategy. As you watch, keep the three focus categories in mind, and analyze what makes the coaches you see successful. Get together with a group of girls working on this badge to watch and dissect great coaching moments. What are some tips you gathered from the movie? What are some things you will do differently as a coach?',
+      step_supplies: 'tv, dvd player, three sports documentaries, pencil and paper for note-taking.',
+      step_weight: '3'
+    }),
+    knex('steps').insert({
+      badge_id: '27',
+      step_description: 'Attend a coaching clinic or seminar. If you cannot find a class nearby, check online for various coaching clinics and sports camps. At the clinic or seminar, look specifically for ideas about the three focus areas.',
+      step_supplies: 'coaching clinic or seminar, pencil and paper for note-taking.',
+      step_weight: '3'
+    }),
+    knex('steps').insert({
+      badge_id: '28',
+      step_description: 'As a Girl Scout Ambassador, you are perfectly poised to help our sisterhood fly into its second powerful century. Although badges, books, and presidents have changed along the way, some things have always been the Girl Scout Way. Share your legacy in this badge. Research historic Girl Scout songs and how they are used to bring people together.',
+      step_supplies: 'Girl Scout song books.',
+      step_weight: '2'
+    }),
+    knex('steps').insert({
+      badge_id: '28',
+      step_description: 'Celebrate World Thinking Day. Look up a country and start researching its cuisine and culture. Work with a group of scouts to host a booth at World Thinking Day. How will you showcase your country and its culture?',
+      step_supplies: 'World Thinking Day supplies, paper and pencil for brainstorming purposes.',
+      step_weight: '3'
+    }),
+    knex('steps').insert({
+      badge_id: '28',
+      step_description: 'Research Girl Scout traditions. What traditions does your troop partake in? What traditions seem to have become obsolete? What traditions are you looking to implement in your Girl Scout troop. Make a list and then make a pact to follow them as a troop.',
+      step_supplies: 'paper, pencil for brainstorming purposes, Internet and Computer for research purposes.',
+      step_weight: '2'
+    })
   );
 };
