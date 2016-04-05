@@ -353,7 +353,16 @@ exports.seed = function(knex, Promise) {
       step_supplies: 'Printed ballots, local laws, writing utensils, ballot box. Adult Assistance needed.',
       step_weight: '3'
     }),
-    
+    knex('steps').insert({
+      badge_id: '16',
+      step_description: 'Showcase your leadership skills by mentoring and leading a Brownie troop! Once assigned to a Brownie troop, demnostrate your organization skills. Arrange mutually convenient meeting times with the leader to plan and discuss how you will interact with the troop. Will you be presenting activities and who will take care of supplies? Arrange for transportation to and from the meetings and events.',
+      step_supplies: 'Brownie troop, paper, pencils. Adult Assistance needed.',
+      step_weight: '3'
+    }),
+    knex('steps').insert({
+      badge_id: '16',
+      step_description: 'Demonstrate a special skill or talent. Look at the Brownie Quest Adult Guide for Its Your World - Change It! '
+    })
 
   );
 };
