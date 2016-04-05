@@ -355,14 +355,124 @@ exports.seed = function(knex, Promise) {
     }),
     knex('steps').insert({
       badge_id: '16',
-      step_description: 'Showcase your leadership skills by mentoring and leading a Brownie troop! Once assigned to a Brownie troop, demnostrate your organization skills. Arrange mutually convenient meeting times with the leader to plan and discuss how you will interact with the troop. Will you be presenting activities and who will take care of supplies? Arrange for transportation to and from the meetings and events.',
+      step_description: 'Showcase your leadership skills by mentoring and leading a Brownie troop! Once assigned to a Brownie troop, demnostrate your organization skills. Arrange mutually convenient meeting times with the leader to plan and discuss how you will interact with the troop.',
       step_supplies: 'Brownie troop, paper, pencils. Adult Assistance needed.',
       step_weight: '3'
     }),
     knex('steps').insert({
       badge_id: '16',
-      step_description: 'Demonstrate a special skill or talent. Look at the Brownie Quest Adult Guide for Its Your World - Change It! '
-    })
-
+      step_description: 'Pick an activity and begin planning. Will you be presenting activities and who will take care of supplies? Arrange for transportation to and from the meetings and events. Once you have completed your plan, share it with your troop leader and the Brownie troop leader for approval.',
+      step_supplies: 'Brownie troop leader, paper, pencils, Adult Assistance needed.',
+      step_weight: '2'
+    }),
+    knex('steps').insert({
+      badge_id: '16',
+      step_description: 'Demonstrate a special skill or talent. Look at the Brownie Quest Adult Guide for Its Your World - Change It! Pick an activity and guide Brownies through an activity that teaches them about the earth, air and water. How can we play an active role in protecting the environment?',
+      step_supplies: 'Brownie troop, Adult Guide for Its Your World - Change It! Additional supplies based on the activity. Adult Assistance needed.',
+      step_weight: '3'
+    }),
+    knex('steps').insert({
+      badge_id: '16',
+      step_description: 'After completing an activity with a Brownie troop, get feedback from the troop leader about the activity you led. Answer the Discover, Connect, and Take Action questions on the Leadership in Action pages. What could have gone better? What are areas that need improvement?',
+      step_supplies: 'Survey, Brownie troop, Discover, Connect and Take Actions pages.',
+      step_weight: '2'
+    }),
+    knex('steps').insert({
+      badge_id: '17',
+      step_description: 'First Aid Brainstorm. Learn the first steps to take in an emergency. Brainstorm some types of emergencies and how those emergencies can be prevented.',
+      step_supplies: 'posterboard, whiteboard or chalkboard to write up responses.',
+      step_weight: '2'
+    }),
+    knex('steps').insert({
+      badge_id: '17',
+      step_description: 'Define the 3 Cs. (Check, Call, Care). What does it mean to do each of the three steps? Break up into small groups and think of a creative song or motion to help remember the 3 Cs. When your song or motion is complete, present it to your troop.',
+      step_supplies: 'none',
+      step_weight: '3'
+    }),
+    knex('steps').insert({
+      badge_id: '17',
+      step_description: 'How can I help? Gather materials and supplies for a first aid kit from home or a local pharmacy. Using instruction sheets provided by a leader, read about how to give care in specific emergency situations. Break up into groups and practice giving care for one another using the instructions. If there is time, draw an emergency situation note card from a basket and act out the listed emergency using your Check, Call and Care knowledge.',
+      step_supplies: 'notecards, bandage tape or masking tape, different sized bandages, popsicle sticks, magazines, string, ribbon or long strips of cloth, dish or medium-sized towels or blankets, gauze, instruciton pages. Adult Assistance needed.',
+      step_weight: '3'
+    }),
+    knex('steps').insert({
+      badge_id: '17',
+      step_description: 'Badge Connection: Have you ever needed emergency care? What would you do if you were in the wilderness and someone got hurt? How should you react in an emergency? Have you ever helped someone who needed first aid? What type of people help others for their job? What do you think could happen if a first aid situation went untreated? Answer these questions on a sheet of paper and then share with your troop.',
+      step_supplies: 'paper, pencils.',
+      step_weight: '2'
+    }),
+    knex('steps').insert({
+      badge_id: '18',
+      step_description: 'Get a feel for performing solo. For this requirement, draw an envelope from a bag and read a short story or poem to your troop. Make sure at the end to explain the meaning of the story. What is the point? There should be a point to every public speaking endeavor.',
+      step_supplies: 'envelopes, poems or short stories (to be provided by troop leader).',
+      step_weight: '2'
+    }),
+    knex('steps').insert({
+      badge_id: '18',
+      step_description: 'Focus on Body Language. Choose an item from a bag and using it, play charades and turn it into something else. For isntance, if you get a toothbrush, you could pretend to sing into it. Everyone tries to guess microphone. Now, pass the object to the next person in the circle so everyone gets a chance to turn the object into something different.',
+      step_supplies: 'bag of random items (to be provided by the leader).',
+      step_weight: '2'
+    }),
+    knex('steps').insert({
+      badge_id: '18',
+      step_description: 'Find your voice! Using a stopwatch, stand up in front of your troop and tell your life story in 60 seconds. Try to tell the story in as close to 60 seconds as you can without going over.',
+      step_supplies: 'stopwatch',
+      step_weight: '1'
+    }),
+    knex('steps').insert({
+      badge_id: '18',
+      step_description: 'Get onstage! Can you make a list of times when you have spoken in front of a crowd? Was it in a play or doing service activities in your community? How did you feel? After the activities associated with this badge, do you feel you are more prepared to speak in public?',
+      step_supplies: 'none',
+      step_weight: '2'
+    }),
+    knex('steps').insert({
+      badge_id: '19',
+      step_description: 'Develop an innovation and turn it into a business. Before you begin, you will need to know who your innovation will serve. That person is called a client. It is easier to come up with an innovation if your client is very specific- a person with a specific activity in a specific place. Brainstorm a list of people, activities and places. Mix and match some of these. What combinations did you come up with? Share with your troop.',
+      step_supplies: 'paper, pencils.',
+      step_weight: '1'
+    }),
+    knex('steps').insert({
+      badge_id: '19',
+      step_description: 'Most innovations come in one of two categories. Products and Services. Work with a team and come up with a definition for each. Can you think of examples of each?',
+      step_supplies: 'paper, pencils.',
+      step_weight: '2'
+    }),
+    knex('steps').insert({
+      badge_id: '19',
+      step_description: 'Using the Entrepreneur worksheets from your Badge Activity Book, write down your original idea. Now that you have brainstormed a bit, write down your improved idea. What does it do? Why is it a good idea? Now sketch out your idea.',
+      step_supplies: 'Badge Activity Book, pencils.',
+      step_weight: '2'
+    }),
+    knex('steps').insert({
+      badge_id: '19',
+      step_description: 'How will your idea be funded? Look up the definition of seed money, business models and merchandising. Which one is most aligned to your idea? Using the worksheets in your Badge Activity book, imagine how your business will make money. What would it take to sell this product or service? When you are finished with the financial worksheets, take time to prepare a 1 minute presentation of your idea. Then, present the idea to your troop.',
+      step_supplies: 'Badge Activity Book, pencils.',
+      step_weight: '3'
+    }),
+    knex('steps').insert({
+      badge_id: '20',
+      step_description: 'Explore the connection between humans and animals. What is evolution? Draw a picture of an animal and its evolution. Present your drawing to the troop.',
+      step_supplies: 'paper, colored pencils, markers and crayons.',
+      step_weight: '1'
+    }),
+    knex('steps').insert({
+      badge_id: '20',
+      step_description: 'How do animals help people emotionally? Find a family member or friend that owns a pet. Interview them on why they got a pet, how owning a pet makes them feel, and any other questions you may have. Write down their responses and bring them to the next meeting to present to your troop.',
+      step_supplies: 'paper, pencils.',
+      step_weight: '2'
+    }),
+    knex('steps').insert({
+      badge_id: '20',
+      step_description: 'How do animals help people with disabilities? Talk to someone who trains assistance animals. It oculd be animals that help people with disabilities or health conditions like visual or hearing impairment, epilepsy, or paralysis. What is involved in training the animal? Why is that animal particularly suited to helping people in a certain way? What kind of preparation is needed to go into this type of career? When you are done researching or talking to someone, see if you can find someone who has an assistance animal. How has it changed their life? How easy or difficult was it to learn how to work with the animal? If you can, see if you can meet the animal too!',
+      step_supplies: 'paper, pencils.',
+      step_weight: '3'
+    }),
+    knex('steps').insert({
+      badge_id: '20',
+      step_description: 'Practice being a scientist. Conduct your own observation of an animal and its behavior. Whether you are watching a reccoon in the backyard or your own pet, train your eye to notice details about the animal - how it moves, eats, and sleeps; how it reacts to humans; when it seems tired or energetic. Keep a log book of your observations for a week and then present it to your troop.',
+      step_supplies: 'log book(journal or stapled paper), pencils.',
+      step_weight: '3'
+    }),
+    
   );
 };
