@@ -304,6 +304,56 @@ exports.seed = function(knex, Promise) {
       step_description: 'Invite a nutritionist to come and speak at your meeting. Make a list of questions prior to their visit to ask. What are ways I can become more healthy? What are items from my diet that are unhealthy? What activities should I do to get daily exercise?',
       step_supplies: 'nutritionist, Adult Assistance needed.',
       step_weight: '3'
-    })
+    }),
+    knex('steps').insert({
+      badge_id: '14',
+      step_description: 'What is a budget? What are areas of your life that having or using a budget would be beneficial? What is a long-term budget and what is a short-term budget?',
+      step_supplies: 'none',
+      step_weight: '1'
+    }),
+    knex('steps').insert({
+      badge_id: '14',
+      step_description: 'Split up into groups within your troop and make a list of things that cost money in Girl Scouts. Calculate how much money comes in from dues and cookie sales, and set a budget for your troop. Come together as a troop and decide on what items go or stay on the budget. Then, vote for a troop treasurer who will be responsible for collecting dues and keeping track of the budget.',
+      step_supplies: 'paper, pencils',
+      step_weight: '3'
+    }),
+    knex('steps').insert({
+      badge_id: '14',
+      step_description: 'How do goals play into budgeting? Write down three personal goals and three goals for your troop. How can a budget help you achieve these goals? Pair up with a partner and compare your goals. Now, select two from your lists and create budgets for each of these.',
+      step_supplies: 'paper, pencils',
+      step_weight: '2'
+    }),
+    knex('steps').insert({
+      badge_id: '14',
+      step_description: 'What is a small business? Can you identify any small businesses in your town or city? Research three small businesses and/or visit a small business in your town. Make a list of 10 questions to ask the owner or to research. Pretend you are a small business owner and create a small business. Make a budget, financial goals and list of expenses for your business. What are some issues that you could run into as a business owner?',
+      step_supplies: 'paper, pencils, Computer and Internet, Adult Assistance needed.',
+      step_weight: '3'
+    }),
+    knex('steps').insert({
+      badge_id: '15',
+      step_description: 'What makes an active citizen? Decide what being an active citizen means to you. Brainstorm characteristics of an active citizen and illustrate on paper or whiteboard for everyone to see.',
+      step_supplies: 'paper, pencils, colored pencils, markers and crayons.',
+      step_weight: '2'
+    }),
+    knex('steps').insert({
+      badge_id: '15',
+      step_description: 'Voting. What does it mean to vote? Research when women first became able to vote in the United States. What does it mean to vote in local elections versus national elections? What are the different branches of national government and what role does each play?',
+      step_supplies: 'Internet, paper, pencil',
+      step_weight: '2'
+    }),
+    knex('steps').insert({
+      badge_id: '15',
+      step_description: 'Look up issues being discussed at your city or towns next planning commission public hearing. Write them down on a piece of paper and with a group, act out how the government would make decisions in approving or denying the requests being discussed. Discuss a development application or the request, how city rules may factor into making these decisions and what the governments plan of action will be. What do you think the local government should do in this situation? What are some things that could cause issues in approving or denying the requests? When you are complete, be prepared to present your results.',
+      step_supplies: 'Internet, paper, pencil, markers, colored pencils and crayons.',
+      step_weight: '3'
+    }),
+    knex('steps').insert({
+      badge_id: '15',
+      step_description: 'Look into your local laws. Leader prints out ballots for each girl. Girls are able to read about local laws and vote on them. Think about the law and if it is best for the community. What are the benefits to approving this law? What are the harms associated with this law? Vote yes or no for each question and then drop your ballot in the box. Two volunteers will count the votes and read the results out loud. Was your vote the end result? What would you change about the result? Why do you think your answer is the right answer? Why is voting a good way to make a group decision?',
+      step_supplies: 'Printed ballots, local laws, writing utensils, ballot box. Adult Assistance needed.',
+      step_weight: '3'
+    }),
+    
+
   );
 };
