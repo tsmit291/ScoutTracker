@@ -9,10 +9,13 @@ app.config(function($routeProvider, $authProvider){
   })
 
   $authProvider.google({
-    clientId: '911347123367-mk5p5j2g5v6f8svm1ossb068qe1q4828.apps.googleusercontent.com',
-    url: '/auth/google',
+    clientId: '911347123367-mk5p5j2g5v6f8svm1ossb068qe1q4828.apps.googleusercontent.com'
+  })
+
+  $authProvider.google({
+    url: 'http://localhost:3000',
     authorizationEndpoint: 'https://accounts.google.com/o/oauth2/auth',
-    redirectUri: 'http://localhost:3000/_oauth/google',
+    redirectUri: 'http://localhost:3000/auth/google',
     requiredUrlParams: ['scope'],
     optionalUrlParams: ['display'],
     scope: ['profile', 'email'],
@@ -21,8 +24,9 @@ app.config(function($routeProvider, $authProvider){
     display: 'popup',
     type: '2.0',
     popupOptions: {width: 452, height: 633}
-  });
-
+  })
 });
+
+
 
 // remember no hashes on your routes.
