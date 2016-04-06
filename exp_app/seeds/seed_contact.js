@@ -5,52 +5,64 @@ exports.seed = function(knex, Promise) {
 
     // Inserts seed entries
     knex('contact').insert({
-      first_name: 'Taylor',
-      last_name: 'Smith',
+      given_name: 'Taylor',
+      family_name: 'Smith',
+      google_id: 'null',
       email: 'tsmit291@icloud.com',
       password: 'test',
       troop_number: '1510',
-      admin_access: 'yes'
+      admin_access: 'yes',
+      picture: 'http://www.girlscoutsla.org/images/other/Product_Sales/JuniorGSHoldingCan.jpg'
     }),
     knex('contact').insert({
-      first_name: 'Ann',
-      last_name: 'Ellis',
+      given_name: 'Ann',
+      family_name: 'Ellis',
+      google_id: 'null',
       email: 'ann@gmail.com',
       password: 'test',
       troop_number: '1222',
-      admin_access: 'yes'
+      admin_access: 'yes',
+      picture: 'http://www.girlscoutsla.org/images/other/Product_Sales/JuniorGSHoldingCan.jpg'
     }),
     knex('contact').insert({
-      first_name: 'Holly',
-      last_name: 'French',
+      given_name: 'Holly',
+      family_name: 'French',
+      google_id: 'null',
       email: 'frenchie_h@icloud.com',
       password: 'test',
       troop_number: '3578',
-      admin_access: 'yes'
+      admin_access: 'yes',
+      picture: 'http://www.girlscoutsla.org/images/other/Product_Sales/JuniorGSHoldingCan.jpg'
     }),
     knex('contact').insert({
-      first_name: 'Polly',
-      last_name: 'Smith',
+      given_name: 'Polly',
+      family_name: 'Smith',
+      google_id: 'null',
       email: 'polly@icloud.com',
       password: 'test',
       troop_number: '1510',
-      admin_access: 'no'
+      admin_access: 'no',
+      picture: 'http://www.girlscoutsla.org/images/other/Product_Sales/JuniorGSHoldingCan.jpg'
     }),
     knex('contact').insert({
-      first_name: 'Elise',
-      last_name: 'Smith',
+      given_name: 'Elise',
+      family_name: 'Smith',
+      google_id: 'null',
       email: 'elise@icloud.com',
       password: 'test',
       troop_number: '1222',
-      admin_access: 'no'
+      admin_access: 'no',
+      picture: 'http://www.girlscoutsla.org/images/other/Product_Sales/JuniorGSHoldingCan.jpg'
     }),
     knex('contact').insert({
-      first_name: 'Tasha',
-      last_name: 'Evans',
+      given_name: 'Tasha',
+      family_name: 'Evans',
+      google_id: 'null',
       email: 'tasha@icloud.com',
       password: 'test',
       troop_number: '3578',
-      admin_access: 'no'
+      admin_access: 'no',
+      picture: 'http://www.girlscoutsla.org/images/other/Product_Sales/JuniorGSHoldingCan.jpg'
     })
   )
 };
