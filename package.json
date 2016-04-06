@@ -16,6 +16,7 @@
     "morgan": "~1.6.1",
     "pg": "^4.5.2",
     "satellizer": "^0.14.0",
-    "serve-favicon": "~2.3.0"
+    "serve-favicon": "~2.3.0",
+    "toastr": "^2.1.2"
   }
 }
