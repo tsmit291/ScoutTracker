@@ -1,15 +1,28 @@
-var app = angular.module('scoutApp', ['ngRoute']);
+var app = angular.module('scoutApp', ['ngRoute', 'satellizer']);
 
-app.config(function(['$routeProvider', '$authProvider']){
+app.config(function($routeProvider, $authProvider){
   $routeProvider
 
-  $authProvider.google({
-    clientId: '911347123367-mk5p5j2g5v6f8svm1ossb068qe1q4828.apps.googleusercontent.com'
+  .when('/', {
+    templateUrl: 'partials/home.html',
+    controller: 'mainController'
   });
 
-  .when('/', {
-    templateUrl: 'partials/home.html'
-  })
+  $authProvider.google({
+    clientId: '911347123367-mk5p5j2g5v6f8svm1ossb068qe1q4828.apps.googleusercontent.com',
+    url: '/auth/google',
+    authorizationEndpoint: 'https://accounts.google.com/o/oauth2/auth',
+    redirectUri: 'http://localhost:3000/_oauth/google',
+    requiredUrlParams: ['scope'],
+    optionalUrlParams: ['display'],
+    scope: ['profile', 'email'],
+    scopePrefix: 'openid',
+    scopeDelimiter: ' ',
+    display: 'popup',
+    type: '2.0',
+    popupOptions: {width: 452, height: 633}
+  });
+
 });
 
 // remember no hashes on your routes.
