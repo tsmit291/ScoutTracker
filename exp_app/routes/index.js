@@ -16,7 +16,6 @@ router.get('/', function(req, res, next) {
 router.get('/auth/google', function(req,res){
   var accessTokenUrl = 'https://accounts.google.com/o/oauth2/token';
   var peopleApiUrl = 'https://www.googleapis.com/plus/v1/people/me/openIdConnect';
-  console.log('code is equal to', req.query);
   var params = {
     code: req.query.code,
     client_id: '911347123367-mk5p5j2g5v6f8svm1ossb068qe1q4828.apps.googleusercontent.com',
@@ -27,24 +26,22 @@ router.get('/auth/google', function(req,res){
 
   // exchange authorization code for access token.
   request.post(accessTokenUrl, {json: true, form: params}, function(err, response, token){
+
     var accessToken = token.access_token;
-    console.log('token=' , token);
     var headers = { Authorization: 'Bearer ' + accessToken};
-    console.log('headers are here', headers)
   // retreive profile information about the current user.
   request.get({ url: peopleApiUrl, headers: headers, json: true}, function(err, response, profile){
-    console.log('This is teh Profile');
     console.log(profile);
     if (profile.error){
       return res.status(500).send({message: profile.error.message});
     }
     // link user accounts.
     if (req.header('Authorization')){
-      console.log('this is  the profile ********')
-      console.log(profile);
-      console.log('*********');
-      Contact().select().where({google_id: profile.sub}, function(err, existingUser){
-        if (existingUser){
+      Contact().select().where({google_id: profile.sub}).first().then(function(result){
+        console.log(result);
+        if (result){
+          console.log("user returned **********");
+          console.log(result)
           return res.status(409).send({message: 'There is already a google account that belongs to you'});
         }
         var token = req.header('Authorization').split(' ')[1];
@@ -52,7 +49,7 @@ router.get('/auth/google', function(req,res){
         console.log('Payload ****');
         console.log(payload.sub);
         console.log('******');
-        Contact().find(payload.sub, function(err, user){
+        Contact().select().where({google_id: payload.sub}).then(function(user){
           if (!user){
             return res.status(400).send({message: 'User Not Found'});
           }
@@ -60,25 +57,30 @@ router.get('/auth/google', function(req,res){
           user.picture = user.picture || profile.picture.replace('sz=50', 'sz=200');
           user.displayName = user.displayName || profile.name;
           user.save(function(){
-            var token = createJWT(user);
-            res.send({token: token});
+
+            res.send({token: user});
           });
         });
       });
     } else {
       // create a new user account or return existing one
-      Contact().find({google: profile.sub}, function(err, existingUser){
-        if (existingUser){
-          return res.send({token: createJWT(existingUser)});
+      Contact().select().where({google_id: profile.sub}).first().then(function(rest){
+        console.log("here is my result")
+        console.log(rest)
+        if (rest){
+          return res.send('You are now logged in!');
         }
-        var user = new User();
-        user.google = profile.sub;
+        var user = {}
+
+        user.google_id = profile.sub;
         user.picture = profile.picture.replace('sz=50', 'sz=200');
-        user.displayName = profile.name;
-        user.save(function(err){
-          var token = createJWT(user);
-          res.send({token: token});
-        });
+        user.given_name = profile.given_name;
+        user.family_name = profile.family_name;
+        user.email = profile.email;
+        // Knex call to create user
+      Contact().insert(user).then(function(response){
+        res.send('You have created a user baby');
+      })
       });
     }
   });
