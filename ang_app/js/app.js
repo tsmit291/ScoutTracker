@@ -4,13 +4,13 @@ app.config(function($routeProvider, $authProvider){
   $routeProvider
 
   .when('/', {
-    templateUrl: 'partials/login.html',
-    controller: 'loginController'
-  })
-  .when('/welcome', {
     templateUrl: 'partials/welcome.html',
     controller: 'mainController'
   })
+  // .when('/login', {
+  //   templateUrl: 'partials/login.html',
+  //   controller: 'loginController'
+  // })
 
   $authProvider.google({
     clientId: '911347123367-mk5p5j2g5v6f8svm1ossb068qe1q4828.apps.googleusercontent.com'
