@@ -1,4 +1,46 @@
 <h2>this is the home page. this page explains a bit about the app and allows you to sign in or sign up.</h2>
-<button class="btn btn-block btn-google-plus" ng-click="authenticate('google')">
-          <span class="ion-social-googleplus"></span>Sign in with Google
-        </button>
+<div class="signUp">
+  <ul class="tab-group">
+    <li class="tab active"><a href="#signup">Sign Up</a></li>
+    <li class="tab"><a href="#login">Log in with Google</a></li>
+  </ul>
+  <div class="tab-content">
+    <div id="signup">
+      <h1>Sign Up for Scout Tracker</h1>
+      <form action="/" method="post">
+        <div class="top-row">
+          <div class="field-wrap">
+            <label>First Name<span class="req">*</span></label>
+            <input type="text" required/>
+          </div>
+          <div class="field-wrap">
+            <label>Last Name<span class="req">*</span></label>
+            <input type="text" required/>
+          </div>
+        </div>
+        <div class="field-wrap">
+          <label>Email Address<span class="req">*</span></label>
+          <input type="email" required/>
+        </div>
+        <div class="field-wrap">
+          <label>Troop Number<span class="req">*</span></label>
+          <input type="text" required/>
+        </div>
+        <div class="field-wrap">
+          <label>Are you the troop leader?</span class="req">*</span></label>
+          <input type="checkbox"required/>
+          <div class="field-wrap">
+            <label>Password<span class="req">*</span></label>
+            <input type="password" required/>
+          </div>
+        </div>
+        <button type="submit" class="button button-block"/>Get Started</button>
+      </form>
+    </div>
+    <div id="login">
+      <h1>Sign In</h1>
+      <form action="/" method="post">
+        <div class="field-wrap">
+          <button class="btn btn-block btn-google-plus" ng-click="authenticate('google')">
+                    <span class="ion-social-googleplus"></span>Sign in with Google
+                  </button>

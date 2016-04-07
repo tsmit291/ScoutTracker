@@ -71,7 +71,6 @@ router.get('/auth/google', function(req,res){
           return res.send('You are now logged in!');
         }
         var user = {}
-
         user.google_id = profile.sub;
         user.picture = profile.picture.replace('sz=50', 'sz=200');
         user.given_name = profile.given_name;
