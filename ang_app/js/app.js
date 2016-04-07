@@ -8,10 +8,11 @@ app.config(function($routeProvider, $authProvider){
     controller: 'mainController'
   })
   .when('/login', {
-    templateUrl: 'partials/login.html',
+    templateUrl: 'partials/login.html'
   })
   .when('/leaders/:id/dashboard', {
-    templateUrl: 'partials/leaders/leader_dashboard.html'
+    templateUrl: 'partials/leaders/leader_dashboard.html',
+    controller: 'dashboardController'
   })
 
   $authProvider.google({

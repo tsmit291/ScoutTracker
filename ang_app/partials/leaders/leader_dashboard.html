@@ -1,44 +1,45 @@
 <h2>this is the leader dashboard page. here you can see a list of all scouts as well as a badge directory</h2>
 
-<div ng-controller="leaderdashController">
+<div>
   <div class="badgeDirectory">
-    <tr>
-      <th></th>
-      <th>Badge Name</th>
-      <th>Scout Level</th>
-    </tr>
-    <tbody ng-repeat="badge in badgeCollection">
+    <table>
       <tr>
-        <td>
-          <img src="{{badge.picture}}">
-        </td>
-        <td>
-          <h5><b>{{badge.badge_name}}</b></h5>
-        </td>
-        <td>
-          <h5>{{badge.scout_level}}</h5>
-        </td>
+        <th></th>
+        <th>Badge Name</th>
+        <th>Scout Level</th>
       </tr>
-    </tbody>
+      <tbody>
+        <tr ng-repeat="badge in badgeCollection">
+          <td>
+            <h5><b>{{badge.badge_name}}</b></h5>
+          </td>
+          <td>
+            <h5>{{badge.scout_level}}</h5>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
   <div class="scoutDirectory">
-    <tr>
-      <th></th>
-      <th>Scout Name</th>
-      <th>Scout Activity</th>
-    </tr>
-    <tbody ng-repeat="scout in scoutCollection">
+    <table>
       <tr>
-        <td>
-          <img src="{{scout.picture}}">
+        <th></th>
+        <th>Scout Name</th>
+        <th>Scout Activity</th>
+      </tr>
+      <tbody>
+        <tr ng-repeat="scout in scoutCollection">
+          <td>
+            <img src="{{scout.picture}}">
+          </td>
+          <td>
+            <h5><b>{{scout.given_name + scout.family_name}}</b></h5>
+          </td>
+          <td>
+            <p>Here is where the activity bar will go</p>
+          </td>
         </td>
-        <td>
-          <h5><b>{{scout.given_name + scout.family_name}}</b></h5>
-        </td>
-        <td>
-          <p>Here is where the activity bar will go</p>
-        </td>
-      </td>
-    </tbody>
+      </tbody>
+    </table>
   </div>
   </div>
