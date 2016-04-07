@@ -4,11 +4,12 @@ app.config(function($routeProvider, $authProvider){
   $routeProvider
 
   .when('/', {
-    templateUrl: 'partials/home.html',
-    controller: 'mainController'
+    templateUrl: 'partials/login.html',
+    controller: 'loginController'
   })
   .when('/welcome', {
-    templateUrl: 'partials/welcome.html'
+    templateUrl: 'partials/welcome.html',
+    controller: 'mainController'
   })
 
   $authProvider.google({
