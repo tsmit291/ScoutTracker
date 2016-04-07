@@ -6,5 +6,4 @@ app.controller('mainController', function($scope, $auth){
       $location.path('/#/welcome')
     })
   }
-  console.log("we got here homie. you da best");
 });

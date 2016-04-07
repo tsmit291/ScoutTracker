@@ -14,5 +14,4 @@ router.get("/badges", function(req,res){
 });
 
 
-
 module.exports = router;

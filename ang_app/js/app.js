@@ -8,7 +8,11 @@ app.config(function($routeProvider, $authProvider){
     controller: 'mainController'
   })
   .when('/login', {
-    templateUrl: 'partials/login.html'
+    templateUrl: 'partials/login.html',
+    controller: 'mainController'
+  })
+  .when('/welcome', {
+    templateUrl: 'partials/welcome.html'
   })
   .when('/leaders/:id/dashboard', {
     templateUrl: 'partials/leaders/leader_dashboard.html',
@@ -22,7 +26,7 @@ app.config(function($routeProvider, $authProvider){
   $authProvider.google({
     url: 'http://localhost:3000',
     authorizationEndpoint: 'https://accounts.google.com/o/oauth2/auth',
-    redirectUri: 'http://localhost:3000/auth/google',
+    redirectUri: 'http://localhost:8080/welcome',
     requiredUrlParams: ['scope'],
     optionalUrlParams: ['display'],
     scope: ['profile', 'email'],
