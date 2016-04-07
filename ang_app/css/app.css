@@ -1,1 +1,25 @@
+.body {
 
+}
+.container {
+  width: 30%;
+  height: 90vh;
+  align-items: center;
+  border-radius: 1px black solid;
+}
+
+.badgeDirectory {
+  width: 40%;
+  align-items: left;
+  background-color: pink;
+  border-radius: 1px black solid;
+  padding: 0% 5% 0% 5%;
+}
+
+.scoutDirectory {
+  width: 40%;
+  align-items: right;
+  padding: 0% 5% 0% 5%;
+  background-color: yellow;
+  border-radius: 1px black solid;
+}

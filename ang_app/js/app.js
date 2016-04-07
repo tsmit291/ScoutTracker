@@ -10,6 +10,9 @@ app.config(function($routeProvider, $authProvider){
   .when('/login', {
     templateUrl: 'partials/login.html',
   })
+  .when('/leaders/:id/dashboard', {
+    templateUrl: 'partials/leaders/leader_dashboard.html'
+  })
 
   $authProvider.google({
     clientId: '911347123367-mk5p5j2g5v6f8svm1ossb068qe1q4828.apps.googleusercontent.com'
