@@ -1,1 +1,43 @@
 <h2>this is the home page. this page explains a bit about the app and allows you to sign in or sign up.</h2>
+
+<div class="container">
+  <div class="signupButton">
+    <ul class="tab-group">
+      <li class="tab active"><a href="#signup">Sign Up</a></li>
+    </ul>
+  </div>
+  <div class="signinButton">
+    <ul class="tab-group">
+      <li class="tab active"><a href="#signup">Sign In</a></li>
+    </ul>
+  </div>
+  <div class="signForm">
+    <div class="signinForm">
+      <form action="/" method="post">
+        <div class="field-wrap">
+          <label>First Name<span class="req">*</span></label>
+          <input type="text" required/>
+        </div>
+        <div class="field-wrap">
+          <label>Last Name<span class="req">*</span></label>
+          <input type="text" required/>
+        </div>
+        <div class="field-wrap">
+          <label>Email Address<span class="req">*</span></label>
+          <input type="email" required/>
+        </div>
+        <div class="field-wrap">
+          <label>Password<span class="req">*</span></label>
+          <input type="text" required/>
+        </div>
+        <button class="button button-block">Log In</button>
+    </div>
+    <div class="signUpForm">
+      <button class="btn btn-block btn-google-plus" ng-click="authenticate('google')">
+        <span class="ion-social-googleplus"></span>Sign in with Google
+      </button>
+    </div>
+
+
+  </div>
+</div>
