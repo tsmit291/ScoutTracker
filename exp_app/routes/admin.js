@@ -20,7 +20,7 @@ router.get('/', function(req, res, next) {
 });
 
 // get all Scouts with their troop numbers so they can display on leader dashboard
-Contact().join('scouts', 'contact.id', 'scouts.contact_id').join('troop', 'contact.troop_number', 'troop.troop_number').then(function(results){
-  console.log(results)
-});
+// Contact().join('scouts', 'contact.id', 'scouts.contact_id').join('troop', 'contact.troop_number', 'troop.troop_number').then(function(results){
+//   console.log(results)
+// });
 module.exports = router;
