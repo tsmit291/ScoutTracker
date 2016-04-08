@@ -6,4 +6,6 @@
       <th>Scout Level</th>
     </tr>
     <tbody>
-      <tr 
+      <tr ng-repeat="badge in oneBadge">
+        <td><img src="{{badge.badge_image}}" class="badgeSz"></td>
+        <td><h2><b>{{badge.badge_name}}</b></h2></td>
