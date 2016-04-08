@@ -12,10 +12,10 @@ app.config(function($routeProvider, $authProvider){
     controller: 'mainController'
   })
   .when('/:id/dashboard', {
-    templateUrl: 'partials/scouts/scouts_dashboard.html',
+    templateUrl: 'partials/scouts/dashboard.html',
     controller: 'dashboardController'
   })
-  .when('/:id/dashboard/badges/:id', {
+  .when('/:id/dashboard/badges/:badge_id', {
     templateUrl: 'partials/badges/view.html',
     controller: 'badgeController'
   })
