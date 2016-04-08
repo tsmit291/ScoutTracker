@@ -5,13 +5,13 @@ exports.seed = function(knex, Promise) {
 
     // Inserts seed entries
     knex('leaders').insert({
-      contact_id: '1'
+      contact_id: 1
     }),
     knex('leaders').insert({
-      contact_id: '2'
+      contact_id: 2
     }),
     knex('leaders').insert({
-      contact_id: '3'
+      contact_id: 3
     })
   )
 };

@@ -12,7 +12,7 @@ app.service("oneBadgeService", function($http){
   var oneBadgeService = {};
   oneBadgeService.getBadge = function(badge_id){
     console.log(badge_id);
-    return $http.get("http://localhost:3000/badges/:id", {method: "jsonp"});
+    return $http.get("http://localhost:3000/badges/" + badge_id, {method: "jsonp"});
   }
   return oneBadgeService;
 })

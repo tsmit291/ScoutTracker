@@ -11,7 +11,7 @@ exports.seed = function(knex, Promise) {
       email: 'tsmit291@icloud.com',
       password: 'test',
       troop_number: '1510',
-      admin_access: 'yes',
+      admin_access: true,
       picture: 'http://www.girlscoutsla.org/images/other/Product_Sales/JuniorGSHoldingCan.jpg'
     }),
     knex('contact').insert({
@@ -21,7 +21,7 @@ exports.seed = function(knex, Promise) {
       email: 'ann@gmail.com',
       password: 'test',
       troop_number: '1222',
-      admin_access: 'yes',
+      admin_access: true,
       picture: 'http://www.girlscoutsla.org/images/other/Product_Sales/JuniorGSHoldingCan.jpg'
     }),
     knex('contact').insert({
@@ -31,7 +31,7 @@ exports.seed = function(knex, Promise) {
       email: 'frenchie_h@icloud.com',
       password: 'test',
       troop_number: '3578',
-      admin_access: 'yes',
+      admin_access: true,
       picture: 'http://www.girlscoutsla.org/images/other/Product_Sales/JuniorGSHoldingCan.jpg'
     }),
     knex('contact').insert({
@@ -41,7 +41,7 @@ exports.seed = function(knex, Promise) {
       email: 'polly@icloud.com',
       password: 'test',
       troop_number: '1510',
-      admin_access: 'no',
+      admin_access: false,
       picture: 'http://www.girlscoutsla.org/images/other/Product_Sales/JuniorGSHoldingCan.jpg'
     }),
     knex('contact').insert({
@@ -51,7 +51,7 @@ exports.seed = function(knex, Promise) {
       email: 'elise@icloud.com',
       password: 'test',
       troop_number: '1222',
-      admin_access: 'no',
+      admin_access: false,
       picture: 'http://www.girlscoutsla.org/images/other/Product_Sales/JuniorGSHoldingCan.jpg'
     }),
     knex('contact').insert({
@@ -61,7 +61,7 @@ exports.seed = function(knex, Promise) {
       email: 'tasha@icloud.com',
       password: 'test',
       troop_number: '3578',
-      admin_access: 'no',
+      admin_access: false,
       picture: 'http://www.girlscoutsla.org/images/other/Product_Sales/JuniorGSHoldingCan.jpg'
     })
   )

@@ -21,9 +21,7 @@ router.get("/badges", function(req,res){
 router.get("/badges/:id", function(req,res){
   Badges().where('id', req.params.id).first().then(function(result){
     Steps().where({'badge_id': req.params.id}).then(function(rows){
-      allRows = rows;
-      console.log(rows);
-      res.json({result: result, allRows: allRows});
+      res.json({result: result, rows: rows});
     });
   });
 });
