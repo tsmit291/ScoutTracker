@@ -1,4 +1,4 @@
-app.controller('mainController', function($scope, $auth){
+app.controller('mainController', function($scope, $auth, $routeParams){
 
   $scope.authenticate = function(provider){
     $auth.authenticate(provider)

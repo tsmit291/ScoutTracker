@@ -13,5 +13,12 @@ router.get("/badges", function(req,res){
    });
 });
 
+// get badge by id
+router.get("/badges/:id", function(req,res){
+  Badges().where('id', req.params.id).first().then(function(result){
+    console.log(result);
+    res.json(result);
+  });
+});
 
 module.exports = router;
