@@ -1,25 +1,29 @@
-.body {
-
+body {
+  padding: 5%;
+  background-color: #00ae58;
 }
-.container {
-  width: 30%;
-  height: 90vh;
-  align-items: center;
-  border-radius: 1px black solid;
+
+.badgeSz {
+  width: 5vh;
+  height: 5vh;
+}
+.container-fluid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .badgeDirectory {
-  width: 40%;
-  align-items: left;
-  background-color: pink;
-  border-radius: 1px black solid;
-  padding: 0% 5% 0% 5%;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 5px;
+  margin: 1%;
 }
 
-.scoutDirectory {
-  width: 40%;
-  align-items: right;
-  padding: 0% 5% 0% 5%;
-  background-color: yellow;
-  border-radius: 1px black solid;
+.completedDirectory {
+  float: right;
+  background-color: white;
+  border-radius: 5px;
+  margin: 1%;
 }

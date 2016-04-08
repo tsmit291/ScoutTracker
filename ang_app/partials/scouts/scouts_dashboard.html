@@ -1,1 +1,35 @@
-<h2>we've reached the scout dashboard</h2>
+<h2>this is the leader dashboard page. here you can see a list of all scouts as well as a badge directory</h2>
+<div class="container-fluid">
+  <div class="span5">
+    <table class="badgeDirectory">
+      <tr>
+        <th>Badge Picture</th>
+        <th>Badge Name</th>
+        <th>Scout Level</th>
+      </tr>
+        <tr ng-repeat="badge in badgeCollection">
+          <td><img src="{{badge.badge_image}}" class="badgeSz"></td>
+          <td>
+            <h5><b>{{badge.badge_name}}</b></h5>
+          </td>
+          <td>
+            <h5>{{badge.scout_level}}</h5>
+          </td>
+        </tr>
+    </table>
+  </div>
+  <div class="span6">
+    <table class="completedDirectory">
+      <tr>
+        <th></th>
+        <th>Completed Badge Name</th>
+        <th>Scout Level</th>
+      </tr>
+      <tbody>
+        <tr ng-repeat="badge in badgeCollection">
+          <td><h5><b>{{badge.badge_name}}</b></h5>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -10,6 +10,29 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
+    <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">Scout Tracker</a>
+        </div>
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/#/">Home</a></li>
+            <li><a href="/#/dashboard">My Dashboard</a></li>
+            <li><a href="/#/tracker">My Tracker</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <div ng-view></div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular-route.js"></script>
