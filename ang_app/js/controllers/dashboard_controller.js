@@ -7,6 +7,7 @@ app.controller('dashboardController', function ($scope, badgeService, scoutServi
 
   scoutService.getScouts().then(function(payload){
     $scope.scoutCollection = payload.data;
+    console.log(payload.data);
   }, function(error){
     console.log("an error has occured");
   });
