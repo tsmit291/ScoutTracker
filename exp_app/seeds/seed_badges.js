@@ -6,119 +6,148 @@ exports.seed = function(knex, Promise) {
     // Inserts seed entries
     knex('badges').insert({
       badge_name: 'light blue Petal Patch',
-      scout_level: 'daisies'
+      scout_level: 'daisies',
+      badge_image: 'http://images.nitrosell.com/product_images/5/1145/61305%20Jr%20Girl%20Scout%20hr.jpg'
     }),
     knex('badges').insert({
       badge_name: 'yellow Petal Patch',
-      scout_level: 'daisies'
+      scout_level: 'daisies',
+      badge_image: 'http://images.nitrosell.com/product_images/5/1145/61305%20Jr%20Girl%20Scout%20hr.jpg'
     }),
     knex('badges').insert({
       badge_name: 'green Petal Patch',
-      scout_level: 'daisies'
+      scout_level: 'daisies',
+      badge_image: 'http://images.nitrosell.com/product_images/5/1145/61305%20Jr%20Girl%20Scout%20hr.jpg'
     }),
     knex('badges').insert({
       badge_name: 'red Petal Patch',
-      scout_level: 'daisies'
+      scout_level: 'daisies',
+      badge_image: 'http://images.nitrosell.com/product_images/5/1145/61305%20Jr%20Girl%20Scout%20hr.jpg'
     }),
     knex('badges').insert({
       badge_name: 'orange Petal Patch',
-      scout_level: 'daisies'
+      scout_level: 'daisies',
+      badge_image: 'http://images.nitrosell.com/product_images/5/1145/61305%20Jr%20Girl%20Scout%20hr.jpg'
     }),
     knex('badges').insert({
       badge_name: 'Computer Expert',
-      scout_level: 'brownie'
+      scout_level: 'brownie',
+      badge_image: 'http://images.nitrosell.com/product_images/5/1145/61305%20Jr%20Girl%20Scout%20hr.jpg'
     }),
     knex('badges').insert({
       badge_name: 'My Best Self',
-      scout_level: 'brownie'
+      scout_level: 'brownie',
+      badge_image: 'http://images.nitrosell.com/product_images/5/1145/61305%20Jr%20Girl%20Scout%20hr.jpg'
     }),
     knex('badges').insert({
       badge_name: 'Dancer',
-      scout_level: 'brownie'
+      scout_level: 'brownie',
+      badge_image: 'http://images.nitrosell.com/product_images/5/1145/61305%20Jr%20Girl%20Scout%20hr.jpg'
     }),
     knex('badges').insert({
       badge_name: 'Home Scientist',
-      scout_level: 'brownie'
+      scout_level: 'brownie',
+      badge_image: 'http://images.nitrosell.com/product_images/5/1145/61305%20Jr%20Girl%20Scout%20hr.jpg'
     }),
     knex('badges').insert({
       badge_name: 'My Family',
-      scout_level: 'brownie'
+      scout_level: 'brownie',
+      badge_image: 'http://images.nitrosell.com/product_images/5/1145/61305%20Jr%20Girl%20Scout%20hr.jpg'
     }),
     knex('badges').insert({
       badge_name: 'Camper',
-      scout_level: 'junior'
+      scout_level: 'junior',
+      badge_image: 'http://images.nitrosell.com/product_images/5/1145/61305%20Jr%20Girl%20Scout%20hr.jpg'
     }),
     knex('badges').insert({
       badge_name: 'Independence',
-      scout_level: 'junior'
+      scout_level: 'junior',
+      badge_image: 'http://images.nitrosell.com/product_images/5/1145/61305%20Jr%20Girl%20Scout%20hr.jpg'
     }),
     knex('badges').insert({
       badge_name: 'Staying Fit',
-      scout_level: 'junior'
+      scout_level: 'junior',
+      badge_image: 'http://images.nitrosell.com/product_images/5/1145/61305%20Jr%20Girl%20Scout%20hr.jpg'
     }),
     knex('badges').insert({
       badge_name: 'Financial Literacy',
-      scout_level: 'junior'
+      scout_level: 'junior',
+      badge_image: 'http://images.nitrosell.com/product_images/5/1145/61305%20Jr%20Girl%20Scout%20hr.jpg'
     }),
     knex('badges').insert({
       badge_name: 'Local Government',
-      scout_level: 'junior'
+      scout_level: 'junior',
+      badge_image: 'http://images.nitrosell.com/product_images/5/1145/61305%20Jr%20Girl%20Scout%20hr.jpg'
     }),
     knex('badges').insert({
       badge_name: 'Leader in Action',
-      scout_level: 'cadette'
+      scout_level: 'cadette',
+      badge_image: 'http://images.nitrosell.com/product_images/5/1145/61305%20Jr%20Girl%20Scout%20hr.jpg'
     }),
     knex('badges').insert({
       badge_name: 'First Aid',
-      scout_level: 'cadette'
+      scout_level: 'cadette',
+      badge_image: 'http://images.nitrosell.com/product_images/5/1145/61305%20Jr%20Girl%20Scout%20hr.jpg'
     }),
     knex('badges').insert({
       badge_name: 'Public Speaker',
-      scout_level: 'cadette'
+      scout_level: 'cadette',
+      badge_image: 'http://images.nitrosell.com/product_images/5/1145/61305%20Jr%20Girl%20Scout%20hr.jpg'
     }),
     knex('badges').insert({
       badge_name: 'Entrepreneur',
-      scout_level: 'cadette'
+      scout_level: 'cadette',
+      badge_image: 'http://images.nitrosell.com/product_images/5/1145/61305%20Jr%20Girl%20Scout%20hr.jpg'
     }),
     knex('badges').insert({
       badge_name: 'Animal Helpers',
-      scout_level: 'cadette'
+      scout_level: 'cadette',
+      badge_image: 'http://images.nitrosell.com/product_images/5/1145/61305%20Jr%20Girl%20Scout%20hr.jpg'
     }),
     knex('badges').insert({
       badge_name: 'Website Designer',
-      scout_level: 'senior'
+      scout_level: 'senior',
+      badge_image: 'http://images.nitrosell.com/product_images/5/1145/61305%20Jr%20Girl%20Scout%20hr.jpg'
     }),
     knex('badges').insert({
       badge_name: 'Traveler',
-      scout_level: 'senior'
+      scout_level: 'senior',
+      badge_image: 'http://images.nitrosell.com/product_images/5/1145/61305%20Jr%20Girl%20Scout%20hr.jpg'
     }),
     knex('badges').insert({
       badge_name: 'Womens Health',
-      scout_level: 'senior'
+      scout_level: 'senior',
+      badge_image: 'http://images.nitrosell.com/product_images/5/1145/61305%20Jr%20Girl%20Scout%20hr.jpg'
     }),
     knex('badges').insert({
       badge_name: 'Adventure',
-      scout_level: 'senior'
+      scout_level: 'senior',
+      badge_image: 'http://images.nitrosell.com/product_images/5/1145/61305%20Jr%20Girl%20Scout%20hr.jpg'
     }),
     knex('badges').insert({
       badge_name: 'Gaming',
-      scout_level: 'senior'
+      scout_level: 'senior',
+      badge_image: 'http://images.nitrosell.com/product_images/5/1145/61305%20Jr%20Girl%20Scout%20hr.jpg'
     }),
     knex('badges').insert({
       badge_name: 'Public Policy',
-      scout_level: 'ambassador'
+      scout_level: 'ambassador',
+      badge_image: 'http://images.nitrosell.com/product_images/5/1145/61305%20Jr%20Girl%20Scout%20hr.jpg'
     }),
     knex('badges').insert({
       badge_name: 'Coaching',
-      scout_level: 'ambassador'
+      scout_level: 'ambassador',
+      badge_image: 'http://images.nitrosell.com/product_images/5/1145/61305%20Jr%20Girl%20Scout%20hr.jpg'
     }),
     knex('badges').insert({
       badge_name: 'Ambassador',
-      scout_level: 'ambassador'
+      scout_level: 'ambassador',
+      badge_image: 'http://images.nitrosell.com/product_images/5/1145/61305%20Jr%20Girl%20Scout%20hr.jpg'
     }),
     knex('badges').insert({
       badge_name: 'Outdoors',
-      scout_level: 'ambassador'
+      scout_level: 'ambassador',
+      badge_image: 'http://images.nitrosell.com/product_images/5/1145/61305%20Jr%20Girl%20Scout%20hr.jpg'
     })
   )
 };
