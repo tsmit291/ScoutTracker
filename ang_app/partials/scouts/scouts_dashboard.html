@@ -1,3 +1,4 @@
+<h2>we're on the scout dashboard page</h2>
 <div class="container-fluid">
   <div class="span6">
     <table class="badgeDirectory">
@@ -16,7 +17,7 @@
             <h5>{{badge.scout_level}}</h5>
           </td>
           <td>
-            <h5 ng-click="add(badgey)">Add to Tracker</h5>
+            <h5 ng-click="add(badge)"><a ng-href="/#/{{currentScout}}/dashboard/{{badge.id}}/tracker">Add to Tracker</a></h5>
         </tr>
     </table>
   </div>

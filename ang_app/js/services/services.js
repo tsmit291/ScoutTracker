@@ -7,7 +7,7 @@ app.service("badgeService", function($http){
   }
   return badgeService;
 });
-// get one badge
+// get one badge information on own page
 app.service("oneBadgeService", function($http){
   var oneBadgeService = {};
   oneBadgeService.getBadge = function(badge_id){
@@ -17,23 +17,11 @@ app.service("oneBadgeService", function($http){
   return oneBadgeService;
 })
 
-// add badge to tracker service
+// add badge to tracker page from dashboard
 app.service("addBadgeService", function($http){
-  var currentBadges = {};
-  var badgeStories = {};
-
-  this.currentBadges = currentBadges;
-  this.badgeStories = badgeStories;
-
-  this.add = function(badgey){
-    var badges = {};
-    badge.name = this.badge.name;
-    badge.image = this.badge.image;
-  }
-  this.add = function(story){
-    var stories = {};
-    step.description = this.step.description;
-    step.weight = this.step.weight;
-    
-  }
+  var addBadgeService = {};
+  addBadgeService.getBadge = function(id, badge_id){
+  return $http.get("http://localhost:3000/" + id + "/dashboard/" + badge_id + "/tracker", {method: "jsonp"});
+}
+  return addBadgeService;
 })

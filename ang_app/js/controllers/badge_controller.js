@@ -1,6 +1,6 @@
-app.controller('badgeController', function($scope, $routeParams, oneBadgeService){
+app.controller('badgeController', function($scope, $routeParams, oneBadgeService, addBadgeService){
   var badge_id = $routeParams.badge_id;
-  oneBadgeService.getBadge(badge_id).then(function(payload){
+  oneBadgeService.getBadge(id, badge_id).then(function(payload){
     $scope.oneBadge = payload.data;
     console.log(payload);
     console.log($scope.oneBadge);

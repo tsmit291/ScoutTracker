@@ -12,15 +12,16 @@ app.config(function($routeProvider, $authProvider){
     controller: 'mainController'
   })
   .when('/:id/dashboard', {
-    templateUrl: 'partials/scouts/dashboard.html',
+    templateUrl: 'partials/scouts/scouts_dashboard.html',
     controller: 'dashboardController'
   })
   .when('/:id/dashboard/badges/:badge_id', {
     templateUrl: 'partials/badges/view.html',
     controller: 'badgeController'
   })
-  .when('/:id/dashboard/tracker', {
-    templateUrl: 'partials/scouts/scouts_tracker.html'
+  .when('/:id/dashboard/:badge_id/tracker', {
+    templateUrl: 'partials/scouts/scouts_tracker.html',
+    controller: 'trackerController'
   })
 
   $authProvider.google({
