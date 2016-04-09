@@ -19,6 +19,9 @@ app.config(function($routeProvider, $authProvider){
     templateUrl: 'partials/badges/view.html',
     controller: 'badgeController'
   })
+  .when('/:id/dashboard/tracker', {
+    templateUrl: 'partials/scouts/scouts_tracker.html'
+  })
 
   $authProvider.google({
     clientId: '911347123367-mk5p5j2g5v6f8svm1ossb068qe1q4828.apps.googleusercontent.com'

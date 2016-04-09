@@ -30,3 +30,23 @@ body {
   border-radius: 5px;
   margin: 1%;
 }
+
+.myTracker {
+  background-color: #e1e1e1;
+  width: 100vw;
+  height: 100vh;
+  margin: 2%;
+}
+.span2 {
+  background-color: #fdfdfd;
+  border-radius: 6px;
+  box-shadow: 3px 2px 2px #777777;
+  margin: 2% 2% 2% 1%;
+}
+
+.span5 {
+  background-color: #fdfdfd;
+  border-radius: 6px;
+  box-shadow: 3px 2px 2px #777777;
+  margin: 2% 2% 2% 1%;
+}

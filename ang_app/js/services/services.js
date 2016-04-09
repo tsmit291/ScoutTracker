@@ -16,3 +16,24 @@ app.service("oneBadgeService", function($http){
   }
   return oneBadgeService;
 })
+
+// add badge to tracker service
+app.service("addBadgeService", function($http){
+  var currentBadges = {};
+  var badgeStories = {};
+
+  this.currentBadges = currentBadges;
+  this.badgeStories = badgeStories;
+
+  this.add = function(badgey){
+    var badges = {};
+    badge.name = this.badge.name;
+    badge.image = this.badge.image;
+  }
+  this.add = function(story){
+    var stories = {};
+    step.description = this.step.description;
+    step.weight = this.step.weight;
+    
+  }
+})
