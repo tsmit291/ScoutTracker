@@ -14,6 +14,10 @@ var Contact = function(){
   return knex('contact')
 }
 
+var myTracker = function(){
+  return knex('myTracker')
+}
+
 // get all badges
 router.get("/badges", function(req,res){
    Badges().select().then(function(payload){
@@ -39,21 +43,14 @@ router.get("/:id/dashboard/:badge_id/tracker", function(req, res){
     });
 });
 
-//post badge added to tracker page in mytracker table
-router.post('/:id/dashboard/tracker/:badge_id/tracker', function(req, res, next){
-  var = {
-    name: req.body.name,
-    city: req.body.city,
-    state: req.body.state,
-    cuisine: req.body.cuisine,
-    rating: req.body.rating,
-    bio: req.body.textdescription,
-    image: req.body.imageUrl
-  };
-  restaurantinfo().insert(restaurantNew).then(function(result){
-    res.redirect('/restaurants');
-  });
-});
+// post badge in mytracker table
+// router.post('/:id/dashboard/:badge_id/tracker', function(req, res){
+//   console.log(req.body);
+//   myTracker().insert(myBadges).then(function(result){
+//     res.redirect('/:id/dashboard/:badge_id/tracker')
+//   })
+// })
+
 
 
 
