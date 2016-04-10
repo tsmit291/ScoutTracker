@@ -15,7 +15,6 @@
       <p class="sidebar"><i class="fa fa-star"></i> Rating</p>
       <p class="sidebar"><i class="fa fa-pencil-square"></i> Supplies</p>
       <p class="sidebar"><i class="fa fa-sticky-note-o"></i> Notes</p>
-      <p class="sidebar"><i class="fa fa-hourglass-start"></i> Start</p>
       <p class="sidebar"><i class="fa fa-check-square-o"></i> Complete</p>
     </div>
     <div class="well col-sm-3">
@@ -23,16 +22,31 @@
       <h5 class="badgeName">{{badgey.badge_name}}</h5>
     </div>
     <div class="well col-sm-4">
-      <!-- <table class="stepTable"> -->
-        <div ng-repeat="step in steps">
-          <h5>{{step.step_description}}</h5>
-          <h5>{{step.step_supplies}}</h5>
+        <div ng-repeat="step in steps" class="stepDiv">
           <h5>{{step.step_weight}}</h5>
+          <h5 class="stepDescription">{{step.step_description}}</h5>
+          <i class="fa fa-pencil-square"></i>
+          <i class="fa fa-sticky-note-o"></i>
+          <iclass="fa fa-check-square-o"></i>
+          <p class="stepSupplies">Supplies: {{step.step_supplies}}</p>
         </div>
-        <!-- </tr> -->
-      <!-- </table> -->
     </div>
     <div class="well col-sm-2">
       <p>backlog backlog backlog backlog backlog</p>
     </div>
   </div>
+
+
+
+  <!-- <body ng-app="ngToggle">
+    <div ng-controller="AppCtrl">
+        <button ng-click="toggleCustom()">Custom</button>
+        <span ng-hide="custom">From:
+            <input type="text" id="from" />
+        </span>
+        <span ng-hide="custom">To:
+            <input type="text" id="to" />
+        </span>
+        <span ng-show="custom"></span>
+    </div>
+</body> -->

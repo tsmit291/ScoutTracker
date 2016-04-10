@@ -1,6 +1,7 @@
 
 /* Misc */
 body {
+  color: #212123;
   padding: 5%;
   background-color: #00ae58;
 }
@@ -13,6 +14,7 @@ body {
 .fa {
   padding-right: 2%;
   font-size: 18px;
+  color: #777777;
 }
 
 .container-fluid {
@@ -33,7 +35,7 @@ body {
 
 .completedDirectory {
   align-content: center;
-  background-color: white;
+  /*background-color: white;*/
   border-radius: 5px;
   margin: 1%;
 }
@@ -49,9 +51,28 @@ body {
   font-size: 12px;
 }
 
+.stepDescription {
+  font-size: 11px;
+  color: #212123;
+}
+
+.stepDiv {
+  background-color: #EFF5FB;
+  margin: 1%;
+  border-radius: 3px;
+  box-shadow: 2px 1px 1px #777777;
+  padding: 2%;
+}
+
+.stepSupplies {
+  font-size: 9px;
+  padding: 1% 0 1% 1%;
+}
+
 .badgeName {
   display: inline-block;
 }
+
 .myTracker {
   background-color: #fafafa;
   width: 100vw;
