@@ -1,6 +1,6 @@
 <h2>we're on the scout dashboard page</h2>
 <div class="container-fluid">
-  <div class="span6">
+  <div class="well col-sm-4">
     <table class="badgeDirectory">
       <tr>
         <th>Badge Picture</th>
@@ -21,13 +21,11 @@
         </tr>
     </table>
   </div>
-  <div class="span6">
-    <table class="completedDirectory">
-      <tbody>
-        <tr ng-repeat="badge in badgeCollection">
-          <td><img src="{{badge.badge_image}}" class="badgeSz"></td>
-        </tr>
-      </tbody>
-    </table>
+  <div class="well col-sm-7">
+    <div class="completedDirectory">
+        <div ng-repeat="badge in badgeCollection">
+          <div class="col-xs-3"><img src="{{badge.badge_image}}" class="thumbnail"></div>
+        </div>
+    </div>
   </div>
 </div>

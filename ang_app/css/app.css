@@ -21,18 +21,24 @@ body {
 
 /* Badge Directory Page */
 .badgeDirectory {
-  display: flex;
-  flex-direction: row;
+  position: absolute;
+  overflow-y: scroll;
+  border-radius: 5px;
+  margin: 1%;
+  height: 100vh;
+}
+
+.completedDirectory {
+  align-content: center;
   background-color: white;
   border-radius: 5px;
   margin: 1%;
 }
 
-.completedDirectory {
-  float: right;
-  background-color: white;
-  border-radius: 5px;
-  margin: 1%;
+.thumbnail {
+	margin-bottom:7px;
+  width: 6vw;
+  height: 10vh;
 }
 
 /* Badge Tracker Page */
