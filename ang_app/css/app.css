@@ -37,15 +37,15 @@ body {
   height: 100vh;
   margin: 2%;
 }
-.span2 {
-  background-color: #fdfdfd;
+.well {
+  background-color: #d7cfba;
   border-radius: 6px;
   box-shadow: 3px 2px 2px #777777;
   margin: 2% 2% 2% 1%;
 }
 
-.span5 {
-  background-color: #fdfdfd;
+.col-sm-3 {
+  background-color: #d7cfba;
   border-radius: 6px;
   box-shadow: 3px 2px 2px #777777;
   margin: 2% 2% 2% 1%;
