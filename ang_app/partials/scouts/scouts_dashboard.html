@@ -1,12 +1,12 @@
 <h2>we're on the scout dashboard page</h2>
 <div class="container-fluid">
-  <div class="well col-sm-4">
+  <div class="well col-sm-5">
     <table class="badgeDirectory">
       <tr>
-        <th>Badge Picture</th>
+        <th>Picture</th>
         <th>Badge Name</th>
         <th>Scout Level</th>
-        <th></th>
+        <th>Add</th>
       </tr>
         <tr ng-repeat="badge in badgeCollection">
           <td><img src="{{badge.badge_image}}" class="badgeSz"></td>
@@ -17,11 +17,11 @@
             <h5>{{badge.scout_level}}</h5>
           </td>
           <td>
-            <h5 ng-click="add(badge)"><a ng-href="/#/{{currentScout}}/dashboard/{{badge.id}}/tracker">Add to Tracker</a></h5>
+            <h5 ng-click="add(badge)"><a ng-href="/#/{{currentScout}}/dashboard/{{badge.id}}/tracker"><i class="fa fa-plus-square-o"></i></a></h5>
         </tr>
     </table>
   </div>
-  <div class="well col-sm-7">
+  <div class="well col-sm-6">
     <div class="completedDirectory">
         <div ng-repeat="badge in badgeCollection">
           <div class="col-xs-3"><a ng-href="/#/{{currentScout}}/dashboard/badges/{{badge.id}}"><img src="{{badge.badge_image}}" class="thumbnail"></a></div>
