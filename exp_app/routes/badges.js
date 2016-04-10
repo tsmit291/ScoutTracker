@@ -44,12 +44,12 @@ router.get("/:id/dashboard/:badge_id/tracker", function(req, res){
 });
 
 // post badge in mytracker table
-// router.post('/:id/dashboard/:badge_id/tracker', function(req, res){
-//   console.log(req.body);
-//   myTracker().insert(myBadges).then(function(result){
-//     res.redirect('/:id/dashboard/:badge_id/tracker')
-//   })
-// })
+router.post('/:id/dashboard/:badge_id/tracker', function(req, res){
+  console.log(req.body);
+  myTracker().insert(myBadges).then(function(result){
+    res.redirect('/:id/dashboard/:badge_id/tracker')
+  })
+})
 
 
 

@@ -29,8 +29,9 @@ app.service("addBadgeService", function($http){
 // post badges in my tracker to mytracker db
 app.service("postBadgeService", function($http){
   var postBadgeService = {};
-  postBadgeService.getBadge = function(id, badge_id){
-    return $http.post("http://localhost:3000/" + id + "/dashboard/" + badge_id + "/tracker", postBadgeService, {method: "jsonp"})
+  postBadgeService.getBadge = function(newBadge, badge_id, id){
+    console.log(postBadgeService);
+    return $http.post("http://localhost:3000/" + id + "/dashboard/" + badge_id + "/tracker", newBadge, {method: "jsonp"})
   }
   return postBadgeService;
 })
