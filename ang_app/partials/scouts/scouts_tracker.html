@@ -18,10 +18,13 @@
       </tr>
     </div>
     <div class="well col-sm-3">
-      <tr ng-repeat="step in steps">
-        <td><h5>{{steps.step_description}}</h5></td>
-        <td>{{steps.step_supplies}}</td>
-        <td>{{steps.step_weight}}</td>
+      <table class="stepTable">
+        <tr ng-repeat="step in steps">
+          <td><h5>{{step.step_description}}</h5></td>
+          <td>{{step.step_supplies}}</td>
+          <td>{{step.step_weight}}</td>
+        </tr>
+      </table>
     </div>
     <div class="well col-sm-3">
       <p>backlog backlog backlog backlog backlog</p>
