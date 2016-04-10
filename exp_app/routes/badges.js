@@ -33,27 +33,27 @@ router.get("/badges/:id", function(req,res){
 //get badge by id and show on the tracker page
 router.get("/:id/dashboard/:badge_id/tracker", function(req, res){
     Badges().select().where({'id': req.params.badge_id}).then(function(rows){
-      console.log(rows);
-      console.log('***********');
-      res.json(rows);
+      Steps().where({'badge_id': req.params.id}).then(function(rows){
+        res.json({result: result, rows: rows});
+      });
     });
 });
 
 //post badge added to tracker page in mytracker table
-router.post('/:id/dashboard/tracker', function(req, res, next){
-  var newBadge = {
-    name: req.body.name,
-    city: req.body.city,
-    state: req.body.state,
-    cuisine: req.body.cuisine,
-    rating: req.body.rating,
-    bio: req.body.textdescription,
-    image: req.body.imageUrl
-  };
-  restaurantinfo().insert(restaurantNew).then(function(result){
-    res.redirect('/restaurants');
-  });
-});
+// router.post('/:id/dashboard/tracker', function(req, res, next){
+//   var newBadge = {
+//     name: req.body.name,
+//     city: req.body.city,
+//     state: req.body.state,
+//     cuisine: req.body.cuisine,
+//     rating: req.body.rating,
+//     bio: req.body.textdescription,
+//     image: req.body.imageUrl
+//   };
+//   restaurantinfo().insert(restaurantNew).then(function(result){
+//     res.redirect('/restaurants');
+//   });
+// });
 
 
 

@@ -7,17 +7,17 @@ app.service("badgeService", function($http){
   }
   return badgeService;
 });
+
 // get one badge information on own page
 app.service("oneBadgeService", function($http){
   var oneBadgeService = {};
   oneBadgeService.getBadge = function(badge_id){
-    console.log(badge_id);
     return $http.get("http://localhost:3000/badges/" + badge_id, {method: "jsonp"});
   }
   return oneBadgeService;
 })
 
-// add badge to tracker page from dashboard
+// add badge and steps to tracker page from dashboard
 app.service("addBadgeService", function($http){
   var addBadgeService = {};
   addBadgeService.getBadge = function(id, badge_id){

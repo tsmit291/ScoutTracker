@@ -1,13 +1,13 @@
 <div class="myTracker">
   <div class="container-fluid">
     <div class="well col-sm-2">
-      <h5><a href="/:id/dashboard">+ Add a Badge</a></h5>
+      <p class="sidebar"><i class="fa fa-plus-square-o"></i><a href="/:id/dashboard"> Add a Badge</a></p>
       <hr>
-      <h5>Current</h5>
+      <p class="sidebar"><i class="fa fa-list"></i></i><a href="/"> Current</a></p>
       <hr>
-      <h5>Backlog</h5>
+      <p class="sidebar"><i class="fa fa-bars"></i><a href="/"> Backlog</a></p>
       <hr>
-      <h5>Done</h5>
+      <p class="sidebar"><i class="fa fa-check"></i></i><a href="/"> Done</a></p>
     </div>
     <div class="well col-sm-3">
       <tr>
@@ -15,9 +15,11 @@
         <td><h5>{{badgey.badge_name}}</h5></td>
       </tr>
     </div>
-    <div class="well col-sm-4">
-      <tr>
+    <div class="well col-sm-3">
+      <tr ng-repeat="step in steps">
         <td><h5>{{step.step_description}}</h5></td>
+        <td>{{step.step_supplies}}</td>
+        <td>{{step.step_weight}}</td>
     </div>
     <div class="well col-sm-3">
       <p>backlog backlog backlog backlog backlog</p>

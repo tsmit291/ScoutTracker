@@ -10,6 +10,11 @@ body {
   height: 5vh;
 }
 
+.fa {
+  padding-right: 2%;
+  font-size: 18px;
+}
+
 .container-fluid {
   padding-top: 2%;
   width: 100vw;
@@ -21,8 +26,6 @@ body {
 
 /* Badge Directory Page */
 .badgeDirectory {
-  position: absolute;
-  overflow-y: scroll;
   border-radius: 5px;
   margin: 1%;
   height: 100vh;
@@ -42,11 +45,27 @@ body {
 }
 
 /* Badge Tracker Page */
+.sidebar {
+  font-size: 12px;
+}
+
 .myTracker {
   background-color: #fafafa;
   width: 100vw;
   height: 100vh;
   margin: 2%;
+}
+
+.well{
+  overflow: auto;
+}
+
+.well col-sm-6{
+  overflow: auto;
+  background-color: #fafafa;
+  border-radius: 6px;
+  box-shadow: 3px 2px 2px #777777;
+  margin: 2% 2% 2% 1%;
 }
 
 .well col-sm-3 {
@@ -67,5 +86,5 @@ body {
   background-color: #fafafa;
   border-radius: 6px;
   box-shadow: 3px 2px 2px #777777;
-  margin: 2% 2% 2% 1%;
+  margin: 2% 2% 2% 0;
 }
