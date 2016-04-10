@@ -26,12 +26,11 @@ app.service("addBadgeService", function($http){
   return addBadgeService;
 })
 
-// app.service("postBadgeService", function($http){
-//   console.log("right here");
-//   postBadgeService.getBadge = function(id, badge_id){
-//     return $http.post("http://localhost:3000/" + id + "/dashboard/" + badge_id + "/tracker", currentBadge, {method: "jsonp"})
-//   }. success(function(data, status, headers, config){
-//   })
-//   .error(function(data, status, header, config){
-//   })
-// })
+// post badges in my tracker to mytracker db
+app.service("postBadgeService", function($http){
+  var postBadgeService = {};
+  postBadgeService.getBadge = function(id, badge_id){
+    return $http.post("http://localhost:3000/" + id + "/dashboard/" + badge_id + "/tracker", postBadgeService, {method: "jsonp"})
+  }
+  return postBadgeService;
+})
