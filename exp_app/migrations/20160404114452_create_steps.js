@@ -5,6 +5,7 @@ exports.up = function(knex, Promise) {
     table.text('step_description');
     table.text('step_supplies');
     table.integer('step_weight');
+    table.boolean('iscomplete');
   })
 };
 

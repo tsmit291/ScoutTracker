@@ -40,9 +40,15 @@ router.get("/:id/dashboard/:badge_id/tracker", function(req, res){
 });
 
 //post badge added to tracker page in mytracker table
-router.post('/:id/dashboard/tracker', function(req, res, next){
-  var newBadge = {
-    
+router.post('/:id/dashboard/tracker/:badge_id/tracker', function(req, res, next){
+  var = {
+    name: req.body.name,
+    city: req.body.city,
+    state: req.body.state,
+    cuisine: req.body.cuisine,
+    rating: req.body.rating,
+    bio: req.body.textdescription,
+    image: req.body.imageUrl
   };
   restaurantinfo().insert(restaurantNew).then(function(result){
     res.redirect('/restaurants');
