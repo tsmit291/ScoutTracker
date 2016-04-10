@@ -49,6 +49,9 @@ body {
   font-size: 12px;
 }
 
+.badgeName {
+  display: inline-block;
+}
 .myTracker {
   background-color: #fafafa;
   width: 100vw;
