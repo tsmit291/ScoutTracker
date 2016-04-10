@@ -11,7 +11,7 @@
         <tr ng-repeat="badge in badgeCollection">
           <td><img src="{{badge.badge_image}}" class="badgeSz"></td>
           <td>
-            <h5><b>{{badge.badge_name}}</b></h5>
+            <h5><a ng-href="/#/{{currentScout}}/dashboard/badges/{{badge.id}}"><b>{{badge.badge_name}}</b></a></h5>
           </td>
           <td>
             <h5>{{badge.scout_level}}</h5>
@@ -24,7 +24,7 @@
   <div class="well col-sm-7">
     <div class="completedDirectory">
         <div ng-repeat="badge in badgeCollection">
-          <div class="col-xs-3"><img src="{{badge.badge_image}}" class="thumbnail"></div>
+          <div class="col-xs-3"><a ng-href="/#/{{currentScout}}/dashboard/badges/{{badge.id}}"><img src="{{badge.badge_image}}" class="thumbnail"></a></div>
         </div>
     </div>
   </div>
