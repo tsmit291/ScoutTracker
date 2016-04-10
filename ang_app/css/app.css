@@ -1,3 +1,5 @@
+
+/* Misc */
 body {
   padding: 5%;
   background-color: #00ae58;
@@ -7,6 +9,7 @@ body {
   width: 5vh;
   height: 5vh;
 }
+
 .container-fluid {
   padding-top: 2%;
   width: 100vw;
@@ -16,6 +19,7 @@ body {
   justify-content: space-between;
 }
 
+/* Badge Directory Page */
 .badgeDirectory {
   display: flex;
   flex-direction: row;
@@ -31,21 +35,30 @@ body {
   margin: 1%;
 }
 
+/* Badge Tracker Page */
 .myTracker {
-  background-color: #e1e1e1;
+  background-color: #fafafa;
   width: 100vw;
   height: 100vh;
   margin: 2%;
 }
-.well {
-  background-color: #d7cfba;
+
+.well col-sm-3 {
+  background-color: #fafafa;
   border-radius: 6px;
   box-shadow: 3px 2px 2px #777777;
   margin: 2% 2% 2% 1%;
 }
 
-.col-sm-3 {
-  background-color: #d7cfba;
+.well col-sm-4 {
+  background-color: #fafafa;
+  border-radius: 6px;
+  box-shadow: 3px 2px 2px #777777;
+  margin: 2% 2% 2% 1%;
+}
+
+.well col-sm-2 {
+  background-color: #fafafa;
   border-radius: 6px;
   box-shadow: 3px 2px 2px #777777;
   margin: 2% 2% 2% 1%;
