@@ -1,8 +1,9 @@
 app.controller('dashboardController', function ($scope, $routeParams, badgeService, addBadgeService, postBadgeService){
   $scope.currentScout = $routeParams.id;
-  $scope.add = function(newBadge){
-    postBadgeService(newBadge).then(function(results){
-      console.log(newBadge);
+  $scope.currentBadge = $routeParams.badge_id
+  $scope.add = function(newBadge, badgeid){
+    postBadgeService.postBadge(newBadge, $routeParams.id, badgeid).then(function(results){
+
     })
   }
   badgeService.getBadges().then(function(payload){

@@ -7,8 +7,10 @@ app.controller('trackerController', function ($scope, $routeParams, addBadgeServ
   }), function(error){
     console.log("an error has occured");
   };
-  postBadgeService.getBadge($scope.currentScout, $scope.currentBadge).then(function(results){
-  }), function(error){
-    console.log("an error has occured");
-  }
+  // postBadgeService.postBadge($scope.currentScout, $scope.currentBadge).then(function(results){
+  //   console.log("***********");
+  //   console.log($scope.currentScout);
+  // }), function(error){
+  //   console.log("an error has occured");
+  // }
 });

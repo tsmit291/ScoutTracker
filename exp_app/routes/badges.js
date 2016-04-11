@@ -15,7 +15,7 @@ var Contact = function(){
 }
 
 var myTracker = function(){
-  return knex('myTracker')
+  return knex('mytracker')
 }
 
 // get all badges
@@ -45,11 +45,15 @@ router.get("/:id/dashboard/:badge_id/tracker", function(req, res){
 
 // post badge in mytracker table
 router.post('/:id/dashboard/:badge_id/tracker', function(req, res){
-  console.log(req.body);
+  var myBadges=
+  {
+    badge_id: req.body.id,
+  badge_image: req.body.badge_image
+}
   myTracker().insert(myBadges).then(function(result){
-    res.redirect('/:id/dashboard/:badge_id/tracker')
-  })
-})
+    res.json("confirmation received");
+  });
+});
 
 
 
