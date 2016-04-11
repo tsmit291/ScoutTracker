@@ -4,6 +4,7 @@ app.controller('mainController', function($scope, $auth, $routeParams){
     $auth.authenticate(provider)
     .then(function(response){
       $location.path('/#/welcome')
+      console.log(response);
     })
   }
 });

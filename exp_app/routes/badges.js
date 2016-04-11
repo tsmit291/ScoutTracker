@@ -36,18 +36,18 @@ router.get("/badges/:id", function(req,res){
 
 //get badge by id and show on the tracker page
 router.get("/:id/dashboard/:badge_id/tracker", function(req, res){
-    Badges().select().where({'id': req.params.badge_id}).then(function(result){
-      Steps().select().where({'badge_id': req.params.badge_id}).then(function(rows){
-        res.json({result: result, rows: rows});
-      });
+  Badges().select().where({'id': req.params.badge_id}).then(function(result){
+    Steps().select().where({'badge_id': req.params.badge_id}).then(function(rows){
+      res.json({result: result, rows: rows});
     });
+  });
 });
 
 router.get("/:id/dashboard/tracker", function(req, res){
   myTracker().select().then(function(result){
     res.json({result: result})
   })
-})
+});
 
 // router.get('/restaurants/:restid/employees/:empid/edit', function(req, res, next) {
 //   knex('restaurants').where("id", req.params.restid).select().then(function(result) {
@@ -63,10 +63,10 @@ router.post('/:id/dashboard/:badge_id/tracker', function(req, res){
     console.log(result);
     if (badge_id == undefined) {
     }
-  var myBadges= {
-    badge_id: req.body.id,
-    badge_image: req.body.badge_image
-  }
+    var myBadges= {
+      badge_id: req.body.id,
+      badge_image: req.body.badge_image
+    }
   myTracker().insert(myBadges).then(function(result){
     res.json("confirmation received");
   });

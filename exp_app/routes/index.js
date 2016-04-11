@@ -8,10 +8,7 @@ var google = process.env.GOOGLE_SECRET
 function Contact(){
   return knex('contact');
 };
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
+
 
 router.get('/auth/google', function(req,res){
   var accessTokenUrl = 'https://accounts.google.com/o/oauth2/token';
@@ -38,17 +35,13 @@ router.get('/auth/google', function(req,res){
     // link user accounts.
     if (req.header('Authorization')){
       Contact().select().where({google_id: profile.sub}).first().then(function(result){
+        console.log("results in express route");
         console.log(result);
         if (result){
-          console.log("user returned **********");
-          console.log(result)
           return res.status(409).send({message: 'There is already a google account that belongs to you'});
         }
         var token = req.header('Authorization').split(' ')[1];
         var payload = jwt.decode(token, config.TOKEN_SECRET);
-        console.log('Payload ****');
-        console.log(payload.sub);
-        console.log('******');
         Contact().select().where({google_id: payload.sub}).then(function(user){
           if (!user){
             return res.status(400).send({message: 'User Not Found'});
