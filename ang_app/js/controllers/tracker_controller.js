@@ -3,14 +3,10 @@ app.controller('trackerController', function ($scope, $routeParams, addBadgeServ
   $scope.currentBadge = $routeParams.badge_id;
   addBadgeService.getBadge($scope.currentScout, $scope.currentBadge).then(function(results){
     $scope.steps = results.data.rows
-    $scope.badgey = results.data.result[0]
+    $scope.badgey = results.data.result
+    console.log("******** badgey ********* ");
+    console.log($scope.badgey);
   }), function(error){
     console.log("an error has occured");
   };
-  // postBadgeService.postBadge($scope.currentScout, $scope.currentBadge).then(function(results){
-  //   console.log("***********");
-  //   console.log($scope.currentScout);
-  // }), function(error){
-  //   console.log("an error has occured");
-  // }
 });

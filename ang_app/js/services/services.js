@@ -21,18 +21,11 @@ app.service("oneBadgeService", function($http){
 app.service("addBadgeService", function($http){
   var addBadgeService = {};
   addBadgeService.getBadge = function(id, badge_id){
-  return $http.get("http://localhost:3000/" + id + "/dashboard/" + badge_id + "/tracker", {method: "jsonp"});
+  return $http.get("http://localhost:3000/" + id + "/dashboard/tracker", {method: "jsonp"});
 }
   return addBadgeService;
 })
 
-// check database and see what badges are already in the tracker
-app.service("checkdbService", function($http){
-  checkdbService.getBadges = function(id, badge_id){
-    return $http.get("http://localhost:3000/" + id + "/dashboard/" + badge_id + "/tracker", {method: "jsonp"})
-  }
-  console.log(checkdbService);
-})
 // post badges in my tracker to mytracker db
 app.service("postBadgeService", function($http){
   var postBadgeService = {};
@@ -41,4 +34,12 @@ app.service("postBadgeService", function($http){
     console.log(newBadge);
   }
   return postBadgeService;
+})
+
+// check database and see what badges are already in the tracker
+app.service("checkdbService", function($http){
+  checkdbService.getBadges = function(id, badge_id){
+    return $http.get("http://localhost:3000/" + id + "/dashboard/" + badge_id + "/tracker", {method: "jsonp"})
+  }
+  console.log(checkdbService);
 })
