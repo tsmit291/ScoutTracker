@@ -45,16 +45,24 @@ router.get("/:id/dashboard/:badge_id/tracker", function(req, res){
 
 // post badge in mytracker table
 router.post('/:id/dashboard/:badge_id/tracker', function(req, res){
-  var myBadges=
-  {
+  var myBadges= {
     badge_id: req.body.id,
-  badge_image: req.body.badge_image
-}
+    badge_image: req.body.badge_image
+  }
   myTracker().insert(myBadges).then(function(result){
     res.json("confirmation received");
   });
 });
 
+router.post('/:id/dashboard/:badge_id/tracker', function(req, res){
+  var myBadges= {
+    badge_id: req.body.id,
+    badge_image: req.body.badge_image
+  }
+  myTracker().where({'badge_id': req.params.badge_id}).update().then(function(result){
+    res.json("we've updated our database. confirmation received.");
+  });
+});
 
 
 
