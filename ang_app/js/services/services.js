@@ -21,7 +21,7 @@ app.service("oneBadgeService", function($http){
 app.service("addBadgeService", function($http){
   var addBadgeService = {};
   addBadgeService.getBadge = function(id, badge_id){
-  return $http.get("http://localhost:3000/" + id + "/dashboard/tracker", {method: "jsonp"});
+  return $http.get("http://localhost:3000/" + id + "/dashboard/" + badge_id + "/tracker", {method: "jsonp"});
 }
   return addBadgeService;
 })

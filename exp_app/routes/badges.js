@@ -40,39 +40,20 @@ router.get("/badges/:id", function(req,res){
 router.get("/:id/dashboard/:badge_id/tracker", function(req, res){
   Badges().select().where({'id': req.params.badge_id}).then(function(result){
     Steps().select().where({'badge_id': req.params.badge_id}).then(function(rows){
+      // console.log('tese are my step rows bro' ,rows);
       res.json({result: result, rows: rows});
     });
   });
 });
 
-router.get("/:id/dashboard/tracker", function(req, res){
-  myTracker().select().then(function(result){
-    res.json({result: result})
-  })
-});
-
-// post badge in mytracker table
-// router.post('/:id/dashboard/:badge_id/tracker', function(req, res){
-//   var myBadges= {
-//     contact_id: req.params.id,
-//     badge_id: req.params.badge_id,
-//     badge_image: req.body.badge_image
-//   }
-//     myTracker().insert(myBadges).then(function(result){
-//       res.json("confirmation received");
-//     });
-// }, function(error){
-//   console.log("you've got an error in your knex call for posting to the my tracker table");
-// });
-
 router.post('/:id/dashboard/:badge_id/tracker', function(req, res){
-  myTracker().select().where({'contact_id': req.params.id}).where({'badge_id': req.params.badge_id}).then(function(result){
-      if (result.length == 0){
+  myTracker().select().where({'contact_id': req.params.id, 'badge_id': req.params.badge_id}).then(function(result){
+      if (result.length === 0){
         var myBadges= {
           contact_id: req.params.id,
           badge_id: req.params.badge_id,
           badge_image: req.body.badge_image
-        }
+        };
         myTracker().insert(myBadges).then(function(){
           myTracker().select().where({'contact_id': req.params.id}).then(function(payload){
             console.log("this is payload",payload);
@@ -81,12 +62,30 @@ router.post('/:id/dashboard/:badge_id/tracker', function(req, res){
         });
       } else {
         myTracker().select().where({'contact_id': req.params.id}).then(function(resulty){
-        res.json(resulty);
         console.log("results are here", resulty);
+        res.json(resulty);
         })
       }
   })
 })
+
+
+// function
+function formatSteps(myTracker, Steps){
+  // console.log('this is my tracker', myTracker);
+  // console.log('these are my steps', Steps);
+  for (var i in myTracker){
+    myTracker[i].steps = [];
+    for(var j in Steps){
+      if (myTracker[i].badge_id == Steps[j].badge_id){
+        myTracker[i].steps.push(Steps[j])
+      }
+    }
+  }
+  return myTracker;
+}
+
+
 
 
 module.exports = router;
