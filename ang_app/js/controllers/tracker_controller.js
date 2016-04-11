@@ -3,7 +3,7 @@ app.controller('trackerController', function ($scope, $routeParams, addBadgeServ
   $scope.currentBadge = $routeParams.badge_id;
   addBadgeService.getBadge($scope.currentScout, $scope.currentBadge).then(function(results){
     $scope.steps = results.data.rows
-    $scope.badgey = results.data.result
+    $scope.badgey = results.data
     console.log("******** badgey ********* ");
     console.log($scope.badgey);
   }), function(error){
