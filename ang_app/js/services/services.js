@@ -31,15 +31,14 @@ app.service("postBadgeService", function($http){
   var postBadgeService = {};
   postBadgeService.postBadge = function(newBadge, id, badge_id){
     return $http.post("http://localhost:3000/" + id + "/dashboard/" + badge_id + "/tracker", newBadge, {method: "jsonp"})
-    console.log(newBadge);
   }
   return postBadgeService;
 })
 
 // check database and see what badges are already in the tracker
-app.service("checkdbService", function($http){
-  checkdbService.getBadges = function(id, badge_id){
-    return $http.get("http://localhost:3000/" + id + "/dashboard/" + badge_id + "/tracker", {method: "jsonp"})
-  }
-  console.log(checkdbService);
-})
+// app.service("checkdbService", function($http){
+//   checkdbService.getBadges = function(id, badge_id){
+//     return $http.get("http://localhost:3000/" + id + "/dashboard/" + badge_id + "/tracker", {method: "jsonp"})
+//   }
+//   console.log(checkdbService);
+// })
