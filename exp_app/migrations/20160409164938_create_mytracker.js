@@ -4,6 +4,7 @@ exports.up = function(knex, Promise) {
     table.integer('contact_id');
     table.integer('badge_id');
     table.string('badge_image');
+    table.string('badge_name');
     table.timestamp('created_at').defaultTo(knex.fn.now());
     table.boolean('backlog_status');
     table.boolean('current_status');
