@@ -1,15 +1,14 @@
 <div class="badgeInformation">
-  <table>
-    <tr>
-      <th></th>
-      <th>Badge Name</th>
-      <th>Scout Level</th>
-    </tr>
-    <tbody>
-      <tr>
-        <td><img src="{{oneBadge.result.badge_image}}" class="badgeSz"></td>
-        <td><h2><b>{{oneBadge.result.badge_name}}</b></h2></td>
-      </tr>
-      <tr ng-repeat="step in steps">
-        <td><h5>{{step.step_description}}</h5></td>
-      </tr>
+  <div class="container-fluid">
+    <div class="well col-md-10">
+      <span class="onebadgeName">{{oneBadge.result.badge_name}}</span>
+      <span><img src="{{oneBadge.result.badge_image}}" class="badgeSz"></span>
+      <span>{{oneBadge.result.scout_level}}</span>
+      <span ng-repeat="step in steps">
+        <h5>{{step.step_weight}}</h5>
+        <h5>{{step.step_description}}</h5>
+        <br>
+        <span><i>{{step.step_supplies}}</i></span>
+    </div>
+  </div>
+</div>
