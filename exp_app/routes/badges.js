@@ -44,7 +44,8 @@ router.post('/:id/dashboard/:badge_id/tracker', function(req, res){
       var myBadges= {
         contact_id: req.params.id,
         badge_id: req.params.badge_id,
-        badge_image: req.body.badge_image
+        badge_image: req.body.badge_image,
+        badge_name: req.body.badge_name
       };
       myTracker().insert(myBadges).then(function(){
         res.end();
