@@ -1,7 +1,5 @@
 var express = require('express');
 var router = express.Router();
-// var request = require('request');
-// var unirest = require('unirest');
 var env = require('dotenv').load();
 var knex = require('../db/knex');
 var google = process.env.GOOGLE_SECRET

@@ -13,7 +13,7 @@ app.service("badgeService", function($http){
 // get one badge information on own page
 app.service("oneBadgeService", function($http){
   var oneBadgeService = {};
-  oneBadgeService.getBadge = function(badge_id){
+  oneBadgeService.getBadge = function(id, badge_id){
     return $http.get(apiString + "badges/" + badge_id, {method: "jsonp"});
   }
   return oneBadgeService;

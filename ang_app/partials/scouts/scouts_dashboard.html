@@ -1,23 +1,6 @@
 <div class="container-fluid">
   <div class="well col-sm-4">
     <label>Search by Name: <input ng-model='searchLevel' type="text"></label>
-    <!-- <form class="navbar-form" role="search">
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search">
-        <span class="input-group-btn">
-          <button type="reset" class="btn btn-default">
-            <span class="glyphicon glyphicon-remove">
-              <span class="sr-only">Close</span>
-            </span>
-          </button>
-          <button type="submit" class="btn btn-default">
-            <span class="glyphicon glyphicon-search">
-              <span class="sr-only">Search</span>
-            </span>
-          </button>
-        </span>
-      </div>
-    </form> -->
     <table class="badgeDirectory">
       <tr ng-repeat="badge in badgeCollection | filter:searchLevel">
         <td><img src="{{badge.badge_image}}" class="badgeSz"></td>
