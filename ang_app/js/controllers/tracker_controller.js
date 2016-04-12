@@ -15,4 +15,5 @@ app.controller('trackerController', function ($scope, $routeParams, addBadgeServ
      }
      console.log($scope.steps);
    });
+  
 });
