@@ -17,10 +17,12 @@
   </div>
   <div class="well col-sm-7">
     <div class="completedDirectory">
-          <div ng-repeat="badge in badgeCollection">
-            <div class="col-xs-3"><a ng-href="/#/{{currentScout}}/dashboard/badges/{{badge.id}}"><img src="{{badge.badge_image}}" class="thumbnail"></a>
-            </div>
-          </div>
+      <div>
+        <h1>Completed Badges</h1>
+      </div>
+      <div ng-repeat="badge in badgeCollection">
+        <div class="col-xs-3"><a ng-href="/#/{{currentScout}}/dashboard/badges/{{badge.id}}"><img src="{{badge.badge_image}}" class="thumbnail"></a>
+        </div>
       </div>
     </div>
   </div>

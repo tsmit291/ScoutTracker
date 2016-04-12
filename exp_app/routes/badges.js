@@ -57,8 +57,8 @@ router.post('/:id/dashboard/:badge_id/tracker', function(req, res){
 //get badge by id and show on the tracker page
 router.get("/:id/dashboard/:badge_id/tracker", function(req, res){
   myTracker().select().where({'contact_id': req.params.id}).then(function(result){
-    Steps().select().where({'badge_id': req.params.badge_id}).then(function(rows){
-      console.log(rows, "these are my rows of steps");
+    Steps().select().then(function(rows){
+      // console.log(rows, "these are my rows of steps");
         res.json(formatSteps(result,rows));
     });
   })
@@ -84,18 +84,20 @@ router.get("/:id/dashboard/:badge_id/tracker", function(req, res){
 
 // function
 function formatSteps(myTracker, Steps){
-  console.log('this is my tracker', myTracker);
-  console.log('these are my steps', Steps);
+  // console.log('this is my tracker', myTracker);
+  // console.log('these are my steps', Steps);
   for (var i in myTracker){
     myTracker[i].steps = [];
+    console.log('this is my tracker' ,myTracker[i].badge_id);
     for(var j in Steps){
+      console.log('these are my steps', Steps[j].badge_id);
       if (myTracker[i].badge_id == Steps[j].badge_id){
         myTracker[i].steps.push(Steps[j])
       }
     }
   }
-  console.log(myTracker[i], "this is myTracker[i]");
-  console.log("this is what is in myTracker currently", myTracker);
+  // console.log(myTracker[i], "this is myTracker[i]");
+  // console.log("this is what is in myTracker currently", myTracker);
   return myTracker;
 }
 
