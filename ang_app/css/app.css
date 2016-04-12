@@ -56,6 +56,11 @@ body {
   color: #212123;
 }
 
+.panel-heading {
+  margin: 2%;
+  align: center;
+}
+
 .badgeDiv {
   background-color: #EFF5FB;
   box-shadow: 2px 1px 1px #777777;
@@ -66,7 +71,7 @@ body {
 
 .stepDiv {
   background-color: #EFF5FB;
-  margin: 1%;
+  margin: 3%;
   border-radius: 3px;
   box-shadow: 2px 1px 1px #777777;
   padding: 2%;

@@ -16,22 +16,30 @@
       <p class="sidebar"><i class="fa fa-check-square-o"></i> Complete</p>
     </div>
     <div class="well col-sm-3">
-      <span ng-repeat="badgies in badgeCollection">
-        <div class="badgeDiv">
-          <img src="{{badgies.badge_image}}" class="badgeSz">
-          <h5 class="badgeName">{{badgies.badge_name}}</h5>
+      <div class="panel panel-default">
+        <div class="panel-heading">My Current Badges</div>
+          <span ng-repeat="badgies in badgeCollection">
+            <div class="badgeDiv">
+              <img src="{{badgies.badge_image}}" class="badgeSz">
+              <h5 class="badgeName">{{badgies.badge_name}}</h5>
+            </div>
+          </span>
         </div>
-      </span>
     </div>
     <div class="well col-sm-3">
-        <div ng-repeat="step in steps" class="stepDiv">
-          <h5>{{step.step_weight}}</h5>
-          <h5 class="stepDescription">{{step.step_description}}</h5>
-          <i class="fa fa-pencil-square"></i>
-          <i class="fa fa-sticky-note-o"></i>
-          <iclass="fa fa-check-square-o"></i>
-          <p class="stepSupplies">Supplies: {{step.step_supplies}}</p>
-        </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">Badge Steps</div>
+          <div ng-repeat="step in steps" class="stepDiv">
+            <h5>{{step.step_weight}}</h5>
+            <h5 class="stepDescription">{{step.step_description}}</h5>
+            <i class="fa fa-pencil-square"></i>
+            <i class="fa fa-sticky-note-o"></i>
+            <iclass="fa fa-check-square-o"></i>
+            <i class="fa fa-check-square-o"></i>
+            <p class="stepSupplies">Supplies: {{step.step_supplies}}</p>
+          </div>
+        <!-- </div> -->
+      </div>
     </div>
     <div class="well col-sm-3">
       <p>backlog backlog backlog backlog backlog</p>
