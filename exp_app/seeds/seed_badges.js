@@ -7,7 +7,7 @@ exports.seed = function(knex, Promise) {
     knex('badges').insert({
       badge_name: 'light blue Petal Patch',
       scout_level: 'daisies',
-      badge_image: 'http://placehold.it/350x150'
+      badge_image: 'https://scouttracker.firebaseapp.com/css/images/badges-01.png'
     }),
     knex('badges').insert({
       badge_name: 'yellow Petal Patch',
