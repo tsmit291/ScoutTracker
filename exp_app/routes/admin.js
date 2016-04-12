@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var knex = require("../db/knex");
+var env = require('dotenv').load();
 
 var Contact = function(){
   return knex('contact')
