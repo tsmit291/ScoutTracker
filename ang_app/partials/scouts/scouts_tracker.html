@@ -29,14 +29,13 @@
     <div class="well col-sm-3">
       <div class="panel panel-default">
         <div class="panel-heading">Badge Steps</div>
-          <div ng-repeat="step in steps" class="stepDiv">
-            <h5>{{step.step_weight}}</h5>
+          <div ng-repeat="step in steps" class="stepDiv" ng-style="completedStyle">
+            <span class="rating"><i>Rating:{{step.step_weight}}</i></span>
             <h5 class="stepDescription">{{step.step_description}}</h5>
             <i class="fa fa-pencil-square"></i>
             <i class="fa fa-sticky-note-o"></i>
-            <iclass="fa fa-check-square-o"></i>
-            <i class="fa fa-check-square-o"></i>
-            <p class="stepSupplies">Supplies: {{step.step_supplies}}</p>
+            <i class="fa fa-check-square-o" ng-click="completedStyle={'background-color': '#BFC4C8'}"></i>
+            <p class="stepSupplies" ng-click="ShowHide()">Supplies: {{step.step_supplies}}</p>
           </div>
       </div>
     </div>

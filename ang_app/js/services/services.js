@@ -36,7 +36,3 @@ app.service("postBadgeService", function($http){
   }
   return postBadgeService;
 })
-
-//   }
-//   console.log(checkdbService);
-// })

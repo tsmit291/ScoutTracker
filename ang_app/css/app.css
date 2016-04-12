@@ -51,6 +51,15 @@ body {
   font-size: 12px;
 }
 
+.rating {
+  font-size:11px;
+}
+
+.completedStyle {
+  background-color: grey;
+  opacity: .2;
+}
+
 .stepDescription {
   font-size: 11px;
   color: #212123;
