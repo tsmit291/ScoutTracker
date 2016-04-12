@@ -32,10 +32,10 @@
           <div ng-repeat="step in steps" class="stepDiv" ng-style="completedStyle">
             <span class="rating"><i>Rating:{{step.step_weight}}</i></span>
             <h5 class="stepDescription">{{step.step_description}}</h5>
-            <i class="fa fa-pencil-square"></i>
+            <i class="fa fa-pencil-square" ng-model="clickedSupplies" ng-click="clickedSupplies=true"></i>
             <i class="fa fa-sticky-note-o"></i>
             <i class="fa fa-check-square-o" ng-click="completedStyle={'background-color': '#BFC4C8'}"></i>
-            <p class="stepSupplies" ng-click="ShowHide()">Supplies: {{step.step_supplies}}</p>
+            <p class="stepSupplies" ng-show="clickedSupplies">Supplies: {{step.step_supplies}}</p>
           </div>
       </div>
     </div>
