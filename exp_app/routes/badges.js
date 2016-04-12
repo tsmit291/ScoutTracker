@@ -57,10 +57,28 @@ router.post('/:id/dashboard/:badge_id/tracker', function(req, res){
 router.get("/:id/dashboard/:badge_id/tracker", function(req, res){
   myTracker().select().where({'contact_id': req.params.id}).then(function(result){
     Steps().select().where({'badge_id': req.params.badge_id}).then(function(rows){
-      res.json(formatSteps(result,rows));
+        res.json(formatSteps(result,rows));
     });
   })
 });
+
+// function
+function formatBadge(myTracker, Badges){
+  console.log("this is my tracker", myTracker);
+  console.log("these are my steps", Badges);
+  for (var i in myTracker){
+    myTracker[i].badges = [];
+    for(var j in Badges){
+      if (myTracker[i].badge_id == Badges[j].id){
+        myTracker[i].badges.push(Badges[j])
+      }
+    }
+  }
+  return myTracker;
+}
+
+
+
 
 // function
 function formatSteps(myTracker, Steps){
