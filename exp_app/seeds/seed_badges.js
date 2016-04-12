@@ -7,27 +7,27 @@ exports.seed = function(knex, Promise) {
     knex('badges').insert({
       badge_name: 'light blue Petal Patch',
       scout_level: 'daisies',
-      badge_image: 'https://scouttracker.firebaseapp.com/css/images/badges-01.png'
+      badge_image: 'https://scouttracker.firebaseapp.com/css/images/daisylightblue-01.png'
     }),
     knex('badges').insert({
       badge_name: 'yellow Petal Patch',
       scout_level: 'daisies',
-      badge_image: 'http://placehold.it/350x150'
+      badge_image: 'https://scouttracker.firebaseapp.com/css/images/daisyyellow-01.png'
     }),
     knex('badges').insert({
       badge_name: 'green Petal Patch',
       scout_level: 'daisies',
-      badge_image: 'http://placehold.it/350x150'
+      badge_image: 'https://scouttracker.firebaseapp.com/css/images/daisygreen-01.png'
     }),
     knex('badges').insert({
       badge_name: 'red Petal Patch',
       scout_level: 'daisies',
-      badge_image: 'http://placehold.it/350x150'
+      badge_image: 'https://scouttracker.firebaseapp.com/css/images/daisyred-01.png'
     }),
     knex('badges').insert({
       badge_name: 'orange Petal Patch',
       scout_level: 'daisies',
-      badge_image: 'http://placehold.it/350x150'
+      badge_image: 'https://scouttracker.firebaseapp.com/css/images/daisyorange-01.png'
     }),
     knex('badges').insert({
       badge_name: 'Computer Expert',
