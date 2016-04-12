@@ -1,4 +1,6 @@
 // get all badges
+var apiString = "http://localhost:3000/";
+var apiString = ""
 app.service("badgeService", function($http){
   var badgeService = {};
   badgeService.getBadges = function(){
