@@ -1,10 +1,10 @@
 // get all badges
-var apiString = "http://localhost:3000/";
-var apiString = ""
+var apiString = "https://localhost:3000/"
+// var apiString = "https://scout-tracker.herokuapp.com/";
 app.service("badgeService", function($http){
   var badgeService = {};
   badgeService.getBadges = function(){
-    return $http.get("http://localhost:3000/badges", {method: "jsonp"});
+    return $http.get(apiString + "badges/" , {method: "jsonp"});
     //return $http.get(heroku app)
   }
   return badgeService;
@@ -14,7 +14,7 @@ app.service("badgeService", function($http){
 app.service("oneBadgeService", function($http){
   var oneBadgeService = {};
   oneBadgeService.getBadge = function(badge_id){
-    return $http.get("http://localhost:3000/badges/" + badge_id, {method: "jsonp"});
+    return $http.get(apiString + "badges/" + badge_id, {method: "jsonp"});
   }
   return oneBadgeService;
 })
@@ -23,7 +23,7 @@ app.service("oneBadgeService", function($http){
 app.service("addBadgeService", function($http){
   var addBadgeService = {};
   addBadgeService.getBadge = function(id, badge_id){
-  return $http.get("http://localhost:3000/" + id + "/dashboard/" + badge_id + "/tracker", {method: "jsonp"});
+  return $http.get(apiString + id + "/dashboard/" + badge_id + "/tracker", {method: "jsonp"});
 }
   return addBadgeService;
 })
@@ -32,7 +32,7 @@ app.service("addBadgeService", function($http){
 app.service("postBadgeService", function($http){
   var postBadgeService = {};
   postBadgeService.postBadge = function(newBadge, id, badge_id){
-    return $http.post("http://localhost:3000/" + id + "/dashboard/" + badge_id + "/tracker", newBadge, {method: "jsonp"})
+    return $http.post(apiString + id + "/dashboard/" + badge_id + "/tracker", newBadge, {method: "jsonp"})
   }
   return postBadgeService;
 })
