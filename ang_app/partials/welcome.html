@@ -13,7 +13,11 @@
     <div class="loginInformation">
       <span>Ready to begin? Click below to log in with Google!</span>
       <br>
-      <button type="button"><a href="/#/login">Log In with Google</a></button>
+      <div class="signUpForm">
+        <button class="btn btn-block btn-google-plus" ng-click="authenticate('google')">
+          <span class="ion-social-googleplus"></span>Sign in with Google
+        </button>
+      </div>
     </div>
   </div>
 </div>
