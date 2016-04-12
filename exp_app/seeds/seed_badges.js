@@ -57,22 +57,22 @@ exports.seed = function(knex, Promise) {
     knex('badges').insert({
       badge_name: 'Camper',
       scout_level: 'junior',
-      badge_image: 'http://placehold.it/350x150'
+      badge_image: 'https://scouttracker.firebaseapp.com/css/images/junior_camper-01.png'
     }),
     knex('badges').insert({
       badge_name: 'Independence',
       scout_level: 'junior',
-      badge_image: 'http://placehold.it/350x150'
+      badge_image: 'https://scouttracker.firebaseapp.com/css/images/juniorindependence-01.png'
     }),
     knex('badges').insert({
       badge_name: 'Staying Fit',
       scout_level: 'junior',
-      badge_image: 'http://placehold.it/350x150'
+      badge_image: 'https://scouttracker.firebaseapp.com/css/images/juniorstayfit-01.png'
     }),
     knex('badges').insert({
       badge_name: 'Financial Literacy',
       scout_level: 'junior',
-      badge_image: 'http://placehold.it/350x150'
+      badge_image: 'https://scouttracker.firebaseapp.com/css/images/juniorliteracy-01-01.png'
     }),
     knex('badges').insert({
       badge_name: 'Local Government',
