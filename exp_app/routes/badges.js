@@ -88,9 +88,7 @@ function formatSteps(myTracker, Steps){
   // console.log('these are my steps', Steps);
   for (var i in myTracker){
     myTracker[i].steps = [];
-    console.log('this is my tracker' ,myTracker[i].badge_id);
     for(var j in Steps){
-      console.log('these are my steps', Steps[j].badge_id);
       if (myTracker[i].badge_id == Steps[j].badge_id){
         myTracker[i].steps.push(Steps[j])
       }
