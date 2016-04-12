@@ -36,44 +36,35 @@ router.get("/badges/:id", function(req,res){
   });
 });
 
-//get badge by id and show on the tracker page
-router.get("/:id/dashboard/:badge_id/tracker", function(req, res){
-  Badges().select().where({'id': req.params.badge_id}).then(function(result){
-    Steps().select().where({'badge_id': req.params.badge_id}).then(function(rows){
-      // console.log('tese are my step rows bro' ,rows);
-      res.json({result: result, rows: rows});
-    });
-  });
-});
 
 router.post('/:id/dashboard/:badge_id/tracker', function(req, res){
   myTracker().select().where({'contact_id': req.params.id, 'badge_id': req.params.badge_id}).then(function(result){
-      if (result.length === 0){
-        var myBadges= {
-          contact_id: req.params.id,
-          badge_id: req.params.badge_id,
-          badge_image: req.body.badge_image
-        };
-        myTracker().insert(myBadges).then(function(){
-          myTracker().select().where({'contact_id': req.params.id}).then(function(payload){
-            console.log("this is payload",payload);
-            res.json(payload)
-          });
-        });
-      } else {
-        myTracker().select().where({'contact_id': req.params.id}).then(function(resulty){
-        console.log("results are here", resulty);
-        res.json(resulty);
-        })
-      }
+    if (result.length === 0){
+      var myBadges= {
+        contact_id: req.params.id,
+        badge_id: req.params.badge_id,
+        badge_image: req.body.badge_image
+      };
+      myTracker().insert(myBadges).then(function(){
+        res.end();
+      });
+    }
   })
 })
 
+//get badge by id and show on the tracker page
+router.get("/:id/dashboard/:badge_id/tracker", function(req, res){
+  myTracker().select().where({'contact_id': req.params.id}).then(function(result){
+    Steps().select().where({'badge_id': req.params.badge_id}).then(function(rows){
+      res.json(formatSteps(result,rows));
+    });
+  })
+});
 
 // function
 function formatSteps(myTracker, Steps){
-  // console.log('this is my tracker', myTracker);
-  // console.log('these are my steps', Steps);
+  console.log('this is my tracker', myTracker);
+  console.log('these are my steps', Steps);
   for (var i in myTracker){
     myTracker[i].steps = [];
     for(var j in Steps){
