@@ -58,25 +58,26 @@ router.post('/:id/dashboard/:badge_id/tracker', function(req, res){
 router.get("/:id/dashboard/:badge_id/tracker", function(req, res){
   myTracker().select().where({'contact_id': req.params.id}).then(function(result){
     Steps().select().where({'badge_id': req.params.badge_id}).then(function(rows){
+      console.log(rows, "these are my rows of steps");
         res.json(formatSteps(result,rows));
     });
   })
 });
 
 // function
-function formatBadge(myTracker, Badges){
-  console.log("this is my tracker for formatting my badge", myTracker);
-  console.log("these are my steps for formatting my badge", Badges);
-  for (var i in myTracker){
-    myTracker[i].badges = [];
-    for(var j in Badges){
-      if (myTracker[i].badge_id == Badges[j].id){
-        myTracker[i].badges.push(Badges[j])
-      }
-    }
-  }
-  return myTracker;
-}
+// function formatBadge(myTracker, Badges){
+//   console.log("this is my tracker for formatting my badge", myTracker);
+//   console.log("these are my steps for formatting my badge", Badges);
+//   for (var i in myTracker){
+//     myTracker[i].badges = [];
+//     for(var j in Badges){
+//       if (myTracker[i].badge_id == Badges[j].id){
+//         myTracker[i].badges.push(Badges[j])
+//       }
+//     }
+//   }
+//   return myTracker;
+// }
 //
 
 

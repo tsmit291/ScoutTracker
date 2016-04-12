@@ -7,6 +7,7 @@ app.controller('trackerController', function ($scope, $routeParams, addBadgeServ
      for (var i=0;i<$scope.badgeCollection.length;i++) {
        if ($scope.badgeCollection[i].badge_id === parseInt($scope.currentBadge)) {
          $scope.steps = $scope.badgeCollection[i].steps;
+         console.log("these are my steps from badge collection", $scope.badgeCollection[i].steps);
          $scope.badgey = $scope.badgeCollection[i];
          $scope.namey = $scope.badgeCollection[i].name;
          break;

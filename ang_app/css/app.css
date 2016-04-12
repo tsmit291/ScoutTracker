@@ -56,6 +56,14 @@ body {
   color: #212123;
 }
 
+.badgeDiv {
+  background-color: #EFF5FB;
+  box-shadow: 2px 1px 1px #777777;
+  margin: 2%;
+  border-radius: 3px;
+  padding: 2%;
+}
+
 .stepDiv {
   background-color: #EFF5FB;
   margin: 1%;
