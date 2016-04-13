@@ -21,9 +21,13 @@
           <span ng-repeat="badgies in badgeCollection">
             <div class="badgeDiv">
               <img src="{{badgies.badge_image}}" class="badgeSz">
-              <h5 class="badgeName" ng-click="">{{badgies.badge_name}}</h5>
+              <h5 class="badgeName" ng-model="clickedBadge" ng-click="clickedBadge=true">{{badgies.badge_name}}</h5>
               <br>
-              <span class="timeStamp">Badge started:{{badgies.created_at | date:'yyyy-MM-dd'}}</span>
+              <div ng-show="clickedBadge">
+                <i class="fa fa-bars"></i>
+                <i class="fa fa-check-square-o"></i>
+                <span class="timeStamp">Badge started:{{badgies.created_at | date:'yyyy-MM-dd'}}</span>
+              </div>
             </div>
           </span>
         </div>

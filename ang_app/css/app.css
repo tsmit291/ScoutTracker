@@ -65,6 +65,11 @@ body {
   color: #212123;
 }
 
+.backlogBadge{
+  font-size: 9px;
+  font-family: sans-serif;
+}
+
 .panel-heading {
   margin: 2%;
   align: center;
