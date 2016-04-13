@@ -65,6 +65,12 @@ body {
   font-size: 12px;
 }
 
+.sidebar2 {
+  font-size: 10px;
+  color: #347bb7;
+  font-style: italic;
+}
+
 .rating {
   font-size:11px;
 }

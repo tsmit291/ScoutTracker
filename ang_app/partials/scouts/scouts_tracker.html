@@ -3,17 +3,20 @@
     <div class="well col-sm-2">
       <p class="sidebar"><i class="fa fa-plus-square-o"></i><a ng-href="/#/routeParams.id/dashboard"> Add a Badge</a></p>
       <hr>
-      <p class="sidebar"><i class="fa fa-list"></i><a ng-href="/#/" + currentScout + "/tracker"> Current Badges</a></p>
-      <hr>
-      <p class="sidebar"><i class="fa fa-bars"></i><a ng-href="/#/" + currentScout + "/tracker"> Backlog</a></p>
-      <hr>
-      <p class="sidebar"><i class="fa fa-check"></i><a ng-href="/#/" + currentScout + "/dashboard"> Awarded Badges</a></p>
+      <p class="sidebar"><i class="fa fa-check"></i><a ng-href="/#/routeParams.id/dashboard"> My Completed Badges</a></p>
       <hr>
       <h4>Key</h4>
-      <p class="sidebar"><i class="fa fa-star"></i> Rating</p>
-      <p class="sidebar"><i class="fa fa-pencil-square"></i> Supplies</p>
-      <p class="sidebar"><i class="fa fa-sticky-note-o"></i> Notes</p>
-      <p class="sidebar"><i class="fa fa-check-square-o"></i> Complete</p>
+      <hr>
+      <p class="sidebar"><i class="fa fa-star"></i><b> Rating</b></p>
+        <p class="sidebar2">1: This badge is estimated to take 1 hour to complete.</p>
+        <p class="sidebar2">2: This badge is estimated to take 1-2 meetings to complete.</p>
+        <p class="sidebar2">3: This badge is estimated to take a month to complete.</p>
+      <hr>
+      <p class="sidebar"><i class="fa fa-pencil-square"></i><b> Supplies</b></p>
+        <p class="sidebar2">What do you need to complete this badge?</p>
+      <hr>
+      <!-- <p class="sidebar"><i class="fa fa-sticky-note-o"></i> Notes</p> -->
+      <p class="sidebar"><i class="fa fa-check-square-o"></i><b> Complete</b></p>
     </div>
     <div class="well col-sm-3">
       <div class="panel panel-default">
@@ -24,9 +27,9 @@
               <h5 class="badgeName" ng-model="clickedBadge" ng-click="clickedBadge=true">{{badgies.badge_name}}</h5>
               <br>
               <div ng-show="clickedBadge">
-                <i class="fa fa-bars" ng-click="badgeBacklog" ng-show="badgeBacklog=true"></i>
+                <!-- <i class="fa fa-bars" ng-click="badgeBacklog" ng-show="badgeBacklog=true"></i> -->
                 <i class="fa fa-check-square-o"></i>
-                <span class="timeStamp">Badge started:{{badgies.created_at | date:'yyyy-MM-dd'}}</span>
+                <span class="timeStamp">Badge Started: {{badgies.created_at | date:'MM-dd-yyyy'}}</span>
               </div>
             </div>
           </span>
