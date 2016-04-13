@@ -29,9 +29,9 @@ app.config(function($routeProvider, $authProvider){
   })
 
   $authProvider.google({
-    url: 'http://localhost:3000',
+    url: '/auth/google',
     authorizationEndpoint: 'https://accounts.google.com/o/oauth2/auth',
-    redirectUri: 'http://localhost:8080/welcome',
+    redirectUri: window.location.origin,
     requiredUrlParams: ['scope'],
     optionalUrlParams: ['display'],
     scope: ['profile', 'email'],

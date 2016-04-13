@@ -79,6 +79,7 @@ body {
 
 .timeStamp {
   font-size: 8px;
+  align: right;
 }
 .stepDiv {
   background-color: #eaf1f7;

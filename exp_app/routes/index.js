@@ -9,14 +9,14 @@ function Contact(){
 };
 
 
-router.get('/auth/google', function(req,res){
+router.post('/auth/google', function(req,res){
   var accessTokenUrl = 'https://accounts.google.com/o/oauth2/token';
   var peopleApiUrl = 'https://www.googleapis.com/plus/v1/people/me/openIdConnect';
   var params = {
-    code: req.query.code,
+    code: req.body.code,
     client_id: '911347123367-mk5p5j2g5v6f8svm1ossb068qe1q4828.apps.googleusercontent.com',
     client_secret: google,
-    redirect_uri: 'http://localhost:3000/auth/google',
+    redirect_uri: req.body.redirect_uri,
     grant_type: 'authorization_code'
   };
 
@@ -60,6 +60,7 @@ router.get('/auth/google', function(req,res){
         console.log("here is my result")
         console.log(rest)
         if (rest){
+          // res.redirect('/#/dashboard')
           return res.send('You are now logged in!');
         }
         var user = {}
