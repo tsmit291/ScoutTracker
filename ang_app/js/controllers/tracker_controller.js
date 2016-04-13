@@ -15,5 +15,5 @@ app.controller('trackerController', function ($scope, $timeout, $routeParams, ad
       }
       console.log($scope.steps);
     });
-  }, 100);
+  }, 50);
 });

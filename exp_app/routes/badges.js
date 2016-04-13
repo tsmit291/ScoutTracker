@@ -64,28 +64,9 @@ router.get("/:id/dashboard/:badge_id/tracker", function(req, res){
   })
 });
 
-// function
-// function formatBadge(myTracker, Badges){
-//   console.log("this is my tracker for formatting my badge", myTracker);
-//   console.log("these are my steps for formatting my badge", Badges);
-//   for (var i in myTracker){
-//     myTracker[i].badges = [];
-//     for(var j in Badges){
-//       if (myTracker[i].badge_id == Badges[j].id){
-//         myTracker[i].badges.push(Badges[j])
-//       }
-//     }
-//   }
-//   return myTracker;
-// }
-//
-
-
 
 // function
 function formatSteps(myTracker, Steps){
-  // console.log('this is my tracker', myTracker);
-  // console.log('these are my steps', Steps);
   for (var i in myTracker){
     myTracker[i].steps = [];
     for(var j in Steps){
@@ -94,8 +75,6 @@ function formatSteps(myTracker, Steps){
       }
     }
   }
-  // console.log(myTracker[i], "this is myTracker[i]");
-  // console.log("this is what is in myTracker currently", myTracker);
   return myTracker;
 }
 

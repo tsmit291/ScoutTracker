@@ -1,6 +1,6 @@
 // get all badges
-var apiString = "http://localhost:3000/"
-// var apiString = "https://scout-tracker.herokuapp.com/";
+// var apiString = "http://localhost:3000/"
+var apiString = "https://scout-tracker.herokuapp.com/";
 app.service("badgeService", function($http){
   var badgeService = {};
   badgeService.getBadges = function(){
