@@ -24,7 +24,7 @@
               <h5 class="badgeName" ng-model="clickedBadge" ng-click="clickedBadge=true">{{badgies.badge_name}}</h5>
               <br>
               <div ng-show="clickedBadge">
-                <i class="fa fa-bars"></i>
+                <i class="fa fa-bars" ng-click="badgeBacklog" ng-show="badgeBacklog=true"></i>
                 <i class="fa fa-check-square-o"></i>
                 <span class="timeStamp">Badge started:{{badgies.created_at | date:'yyyy-MM-dd'}}</span>
               </div>
@@ -48,7 +48,12 @@
     <div class="well col-sm-3">
       <div class="panel panel-default">
         <div class="panel-heading">Backlog Badges</div>
-          <p>These are badges I plan to work on later</p>
+          <div ng-repeat="backlog in badgeCollection" ng-show="badgeBacklog">
+            <div class="badgeDiv">
+              <img src="{{backlog.badge_image}}" class="badgeSz">
+              <h5 class="badgeName" ng-model="clickedBadge" ng-show="clickedBadge">{{backlog.badge_name}}</h5>
+              <br>
+            </div>
         </div>
     </div>
   </div>
