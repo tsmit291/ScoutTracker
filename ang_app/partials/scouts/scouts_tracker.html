@@ -1,7 +1,7 @@
 <div class="myTracker">
   <div class="container-fluid">
     <div class="well col-sm-2">
-      <p class="sidebar"><i class="fa fa-plus-square-o"></i><a ng-href= currentScout + "/dashboard"> Add a Badge</a></p>
+      <p class="sidebar"><i class="fa fa-plus-square-o"></i><a ng-href="/#/" + currentScout + "/dashboard"> Add a Badge</a></p>
       <hr>
       <p class="sidebar"><i class="fa fa-list"></i><a ng-href="/#/" + currentScout + "/tracker"> Current Badges</a></p>
       <hr>
@@ -22,6 +22,7 @@
             <div class="badgeDiv">
               <img src="{{badgies.badge_image}}" class="badgeSz">
               <h5 class="badgeName" ng-click="">{{badgies.badge_name}}</h5>
+              <span>{{badgies.created_at}}</span>
             </div>
           </span>
         </div>

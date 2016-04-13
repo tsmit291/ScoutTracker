@@ -35,7 +35,6 @@ body {
 
 .completedDirectory {
   align-content: center;
-  /*background-color: white;*/
   border-radius: 5px;
   margin: 1%;
 }
@@ -71,7 +70,7 @@ body {
 }
 
 .badgeDiv {
-  background-color: #EFF5FB;
+  background-color: #eaf1f7;
   box-shadow: 2px 1px 1px #777777;
   margin: 2%;
   border-radius: 3px;
@@ -79,7 +78,7 @@ body {
 }
 
 .stepDiv {
-  background-color: #7fd6ab;
+  background-color: #eaf1f7;
   margin: 3%;
   border-radius: 3px;
   box-shadow: 2px 1px 1px #777777;
