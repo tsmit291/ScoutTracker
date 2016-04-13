@@ -22,7 +22,8 @@
             <div class="badgeDiv">
               <img src="{{badgies.badge_image}}" class="badgeSz">
               <h5 class="badgeName" ng-click="">{{badgies.badge_name}}</h5>
-              <span>{{badgies.created_at}}</span>
+              <br>
+              <span class="timeStamp">{{badgies.created_at | | date:'yyyy-MM-dd'}}</span>
             </div>
           </span>
         </div>
