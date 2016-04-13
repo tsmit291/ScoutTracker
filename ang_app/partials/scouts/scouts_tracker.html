@@ -1,7 +1,7 @@
 <div class="myTracker">
   <div class="container-fluid">
     <div class="well col-sm-2">
-      <p class="sidebar"><i class="fa fa-plus-square-o"></i><a ng-href="/#/" + currentScout + "/dashboard"> Add a Badge</a></p>
+      <p class="sidebar"><i class="fa fa-plus-square-o"></i><a ng-href="/#/routeParams.id/dashboard"> Add a Badge</a></p>
       <hr>
       <p class="sidebar"><i class="fa fa-list"></i><a ng-href="/#/" + currentScout + "/tracker"> Current Badges</a></p>
       <hr>
@@ -48,6 +48,7 @@
     <div class="well col-sm-3">
       <div class="panel panel-default">
         <div class="panel-heading">Backlog Badges</div>
+          <p class="backlogCenter">No badges currently in backlog!</p>
           <div ng-repeat="backlog in badgeCollection" ng-show="badgeBacklog">
             <div class="badgeDiv">
               <img src="{{backlog.badge_image}}" class="badgeSz">

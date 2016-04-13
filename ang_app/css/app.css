@@ -29,14 +29,15 @@ body {
 
 /* Welcome Page */
 
-.well col-lg-6 {
-  margin: 0 auto;
+.well col-lg-5 {
   padding: 20%;
   background-color: #D9EDF7;
+  text-align: center;
 }
 
 .welcome {
   font-size: 25px;
+  text-align: center;
   align-items: center;
   font-family: 'Fira Sans', sans-serif;
 }
@@ -66,6 +67,10 @@ body {
 
 .rating {
   font-size:11px;
+}
+
+.backlogCenter {
+  text-align: center;
 }
 
 .completedStyle {
