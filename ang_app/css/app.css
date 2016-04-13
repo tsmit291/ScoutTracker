@@ -71,6 +71,12 @@ body {
   font-style: italic;
 }
 
+.completeButton {
+  background-color: #00ab57;
+  font-family: 'Fira Sans', sans-serif;;
+  color: white;
+}
+
 .rating {
   font-size:11px;
 }
