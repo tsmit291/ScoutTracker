@@ -7,10 +7,6 @@ app.config(function($routeProvider, $authProvider){
     templateUrl: 'partials/welcome.html',
     controller: 'mainController'
   })
-  .when('/login', {
-    templateUrl: 'partials/login.html',
-    controller: 'mainController'
-  })
   .when('/:id/dashboard', {
     templateUrl: 'partials/scouts/scouts_dashboard.html',
     controller: 'dashboardController'

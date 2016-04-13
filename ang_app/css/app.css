@@ -27,6 +27,19 @@ body {
   justify-content: space-between;
 }
 
+/* Welcome Page */
+
+.well col-lg-6 {
+  margin: 0 auto;
+  padding: 20%;
+  background-color: #D9EDF7;
+}
+
+.welcome {
+  font-size: 25px;
+  align-items: center;
+  font-family: 'Fira Sans', sans-serif;
+}
 /* Badge Directory Page */
 .badgeDirectory {
   border-radius: 5px;
